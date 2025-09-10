@@ -23,84 +23,92 @@ const AUTO_SLIDER_CONFIG = {
         animationSpeed: 35, // Override global speed if needed
         images: [
             {
-                src: 'assets/images/laptop_test/apple_logo_black_text.png',
-                alt: 'Apple',
+                src: 'assets/images/casino_test/rocketpot_text_logo_white.webp',
+                alt: 'Rocketpot',
                 width: 'auto', // 'auto' or specific width like '120px'
                 height: '60px', // Height of individual images
                 scale: 1.2, // Scale factor (1.0 = 100%, 1.2 = 120%, 0.8 = 80%, etc.)
                 gap: 70     // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/ASUS_logo_white.png',
-                alt: 'Asus',
+                src: 'assets/images/casino_test/stake_text_logo_white.png',
+                alt: 'Stake',
                 width: 'auto', // 'auto' or specific width like '120px'
                 height: '60px', // Height of individual images
-                scale: 1.3, // Scale factor (1.0 = 100%, 1.2 = 120%, 0.8 = 80%, etc.)
-                gap: 50 // Manual gap after this image (in pixels)
+                scale: 1.5, // Scale factor (1.0 = 100%, 1.2 = 120%, 0.8 = 80%, etc.)
+                gap: 110 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/Dell_logo.png',
-                alt: 'Dell',
-                width: 'auto',
-                height: '60px',
-                scale: 1.0,
-                gap: 95 // Manual gap after this image (in pixels)
-            },
-            {
-                src: 'assets/images/laptop_test/microsoft_logo_grey.png',
-                alt: 'Microsoft',
-                width: 'auto',
-                height: '60px',
-                scale: 2.0,
-                gap: 145   // Larger gap for scaled image
-            },
-            {
-                src: 'assets/images/laptop_test/samsung_logo.png',
-                alt: 'Samsung',
+                src: 'assets/images/casino_test/bc.game_text_logo_white.webp',
+                alt: 'BC.Game',
                 width: 'auto',
                 height: '60px',
                 scale: 3.0,
-                gap: 115    // Larger gap for scaled image
+                gap: 170 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/hp_logo.png',
-                alt: 'HP',
+                src: 'assets/images/casino_test/cloudbet_logo.png',
+                alt: 'cloudbet',
                 width: 'auto',
                 height: '60px',
-                scale: 1.5,
-                gap: 100    // Larger gap for scaled image
+                scale: 3.0,
+                gap: 155    // Larger gap for scaled image
             },
             {
-                src: 'assets/images/laptop_test/Lenovo_logo.png',
-                alt: 'Lenovo',
+                src: 'assets/images/casino_test/bitcasino_text_logo_white.webp',
+                alt: 'Bitcasino',
                 width: 'auto',
                 height: '60px',
                 scale: 2.0,
-                gap: 110    // Larger gap for scaled image
+                gap: 120    // Larger gap for scaled image
             },
             {
-                src: 'assets/images/laptop_test/alienware_logo.png',
-                alt: 'Alienware',
+                src: 'assets/images/casino_test/bitstarz_logo.webp',
+                alt: 'Bitstarz',
+                width: 'auto',
+                height: '60px',
+                scale: 2.0,
+                gap: 50    // Larger gap for scaled image
+            },
+            {
+                src: 'assets/images/casino_test/roobet_text_logo.png',
+                alt: 'Roobet',
+                width: 'auto',
+                height: '60px',
+                scale: 0.8,
+                gap: 25 // Much larger gap for heavily scaled image
+            },
+            {
+                src: 'assets/images/casino_test/mbitcasino_logo.png',
+                alt: 'mbitcasino',
                 width: 'auto',
                 height: '60px',
                 scale: 1.5,
-                gap: 60 // Much larger gap for heavily scaled image
+                gap: 100 // Medium gap for moderately scaled image
             },
             {
-                src: 'assets/images/laptop_test/acer_logo.png',
-                alt: 'Acer',
+                src: 'assets/images/casino_test/sportsbet.io_logo.png',
+                alt: 'Sportsbet.io',
                 width: 'auto',
                 height: '60px',
-                scale: 1.0,
-                gap: 60 // Medium gap for moderately scaled image
+                scale: 2.2,
+                gap: 115    // Large gap for heavily scaled image
             },
             {
-                src: 'assets/images/laptop_test/lg_logo.png',
-                alt: 'LG',
+                src: 'assets/images/casino_test/gamdom_text_logo_white.svg',
+                alt: 'Gamdom',
                 width: 'auto',
                 height: '60px',
-                scale: 1.4,
-                gap: 85    // Large gap for heavily scaled image
+                scale: 1.5,
+                gap: 100   // Larger gap for scaled image
+            },
+            {
+                src: 'assets/images/casino_test/rollbit_logo_white.png',
+                alt: 'Rollbit',
+                width: 'auto',
+                height: '60px',
+                scale: 3.0,
+                gap: 95   // Larger gap for scaled image
             }
         ],
         styling: {
@@ -121,199 +129,111 @@ const AUTO_SLIDER_CONFIG = {
         animationSpeed: 25, // Different speed for variety
         images: [
             {
-                src: 'assets/images/laptop_test/stream1.jpg',
-                alt: 'Stream1',
+                src: 'assets/images/casino_test/casino1.jpeg',
+                alt: 'Casino1',
                 width: 'auto',
                 height: '180px', // Bigger images
                 scale: 1.0, // Scale factor for individual sizing adjustments
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream2.jpg',
-                alt: 'Stream2',
+                src: 'assets/images/casino_test/casino2.webp',
+                alt: 'Casino2',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream3.jpg',
-                alt: 'Stream3',
+                src: 'assets/images/casino_test/casino3.jpg',
+                alt: 'Casino3',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream4.png',
-                alt: 'Stream4',
+                src: 'assets/images/casino_test/casino5.webp',
+                alt: 'Casino5',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream5.jpg',
-                alt: 'Stream5',
+                src: 'assets/images/casino_test/casino6.jpg',
+                alt: 'Casino6',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream6.jpg',
-                alt: 'Stream6',
+                src: 'assets/images/casino_test/casino7.jpg',
+                alt: 'Casino7',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream7.jpg',
-                alt: 'Stream7',
+                src: 'assets/images/casino_test/casino8.jpg',
+                alt: 'Casino8',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream8.png',
-                alt: 'Stream8',
+                src: 'assets/images/casino_test/casino10.webp',
+                alt: 'Casino10',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream9.png',
-                alt: 'Stream9',
+                src: 'assets/images/casino_test/casino12.webp',
+                alt: 'Casino12',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0
             },
             {
-                src: 'assets/images/laptop_test/stream10.jpg',
-                alt: 'Stream10',
+                src: 'assets/images/casino_test/casino13.jpg',
+                alt: 'Casino13',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream11.png',
-                alt: 'Stream11',
+                src: 'assets/images/casino_test/casino14.jpg',
+                alt: 'Casino14',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream12.jpg',
-                alt: 'Stream12',
+                src: 'assets/images/casino_test/casino15.jpg',
+                alt: 'Casino15',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream13.webp',
-                alt: 'Stream13',
+                src: 'assets/images/casino_test/casino16.webp',
+                alt: 'Casino16',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,
                 gap: 30 // Manual gap after this image (in pixels)
             },
             {
-                src: 'assets/images/laptop_test/stream14.jpg',
-                alt: 'Stream14',
-                width: 'auto',
-                height: '180px',
-                scale: 1.0,
-                gap: 30 // Manual gap after this image (in pixels)
-            },
-            {
-                src: 'assets/images/laptop_test/stream15.jpg',
-                alt: 'Stream15',
-                width: 'auto',
-                height: '180px',
-                scale: 1.0,
-                gap: 30 // Manual gap after this image (in pixels)
-            },
-            {
-                src: 'assets/images/laptop_test/stream16.jpg',
-                alt: 'Stream16',
-                width: 'auto',
-                height: '180px',
-                scale: 1.0,
-                gap: 30 // Manual gap after this image (in pixels)
-            },
-            {
-                src: 'assets/images/laptop_test/stream17.jpg',
-                alt: 'Stream17',
-                width: 'auto',
-                height: '180px',
-                scale: 1.0,
-                gap: 30 // Manual gap after this image (in pixels)
-            },
-            {
-                src: 'assets/images/laptop_test/stream18.webp',
-                alt: 'Stream18',
-                width: 'auto',
-                height: '180px',
-                scale: 1.0,
-                gap: 30 // Manual gap after this image (in pixels)
-            },
-            {
-                src: 'assets/images/laptop_test/stream19.jpg',
-                alt: 'Stream19',
-                width: 'auto',
-                height: '180px',
-                scale: 1.0,
-                gap: 30 // Manual gap after this image (in pixels)
-            },
-            {
-                src: 'assets/images/laptop_test/stream20.jpg',
-                alt: 'Stream20',
-                width: 'auto',
-                height: '180px',
-                scale: 1.0,
-                gap: 30 // Manual gap after this image (in pixels)
-            },
-            {
-                src: 'assets/images/laptop_test/stream21.avif',
-                alt: 'Stream21',
-                width: 'auto',
-                height: '180px',
-                scale: 1.0,
-                gap: 30 // Manual gap after this image (in pixels)
-            },
-            {
-                src: 'assets/images/laptop_test/stream22.avif',
-                alt: 'Stream22',
-                width: 'auto',
-                height: '180px',
-                scale: 1.0,
-                gap: 30 // Manual gap after this image (in pixels)
-            },
-            {
-                src: 'assets/images/laptop_test/stream23.jpg',
-                alt: 'Stream23',
-                width: 'auto',
-                height: '180px',
-                scale: 1.0,
-                gap: 30 // Manual gap after this image (in pixels)
-            },
-            {
-                src: 'assets/images/laptop_test/stream24.jpg',
-                alt: 'Stream24',
-                width: 'auto',
-                height: '180px',
-                scale: 1.0,
-                gap: 30 // Manual gap after this image (in pixels)
-            },
-            {
-                src: 'assets/images/laptop_test/stream25.png',
-                alt: 'Stream25',
+                src: 'assets/images/casino_test/casino17.webp',
+                alt: 'Casino17',
                 width: 'auto',
                 height: '180px',
                 scale: 1.0,

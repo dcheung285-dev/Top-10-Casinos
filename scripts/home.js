@@ -383,38 +383,61 @@ class HomePage {
         }
     }
 
-    createCryptoRain(container) {
-        const symbols = ['₿', 'Ξ', 'Ł', 'Ð', '₳', '○', '◊', '△'];
-        
+    createCryptoRain(container, backgroundConfig) {
+        // Pull config from HOME_CONFIG.cryptoAnimations where name === 'crypto-rain',
+        // then fall back to any characters/speed/density provided on backgroundConfig,
+        // then finally fall back to a sensible default.
+        const animList = (window.HOME_CONFIG && window.HOME_CONFIG.cryptoAnimations && window.HOME_CONFIG.cryptoAnimations.animations) || [];
+        const animCfg = animList.find(a => (a.name || '').toLowerCase() === 'crypto-rain');
+
+        const defaultSymbols = ['₿', 'Ξ', 'Ł', 'Ð', '₳', '○', '◊', '△'];
+        const symbols = (animCfg && Array.isArray(animCfg.characters) && animCfg.characters.length)
+            ? animCfg.characters
+            : (backgroundConfig && Array.isArray(backgroundConfig.characters) && backgroundConfig.characters.length)
+                ? backgroundConfig.characters
+                : defaultSymbols;
+
+        const speedSetting = (animCfg && animCfg.speed) || (backgroundConfig && backgroundConfig.speed) || 'medium';
+        const densitySetting = (animCfg && animCfg.density) || (backgroundConfig && backgroundConfig.density) || 'medium';
+
+        const baseDuration = this.getSpeedValue(speedSetting); // seconds baseline
+        const intervalMs = this.getDensityValue(densitySetting); // ms between drops
+
+        const resolvedColor = (() => {
+            // Prefer explicit color from config if present
+            const color = (animCfg && animCfg.color) || (backgroundConfig && backgroundConfig.color);
+            if (color && !color.includes('var(--')) return color;
+            // Resolve CSS variable to concrete color
+            return getComputedStyle(document.documentElement).getPropertyValue('--primary-color').trim();
+        })();
+
         const createRainDrop = () => {
             const drop = document.createElement('div');
             drop.className = 'matrix-char';
             drop.textContent = symbols[Math.floor(Math.random() * symbols.length)];
             drop.style.left = Math.random() * 100 + '%';
-            drop.style.animationDuration = (Math.random() * 3 + 5) + 's';
+            // Add small randomization around base duration
+            drop.style.animationDuration = (Math.random() * 2 + baseDuration) + 's';
             drop.style.opacity = Math.random() * 0.5 + 0.2;
             drop.style.fontSize = (Math.random() * 20 + 15) + 'px';
-            
-            // Use resolved theme color instead of CSS variable
-            const primaryColor = getComputedStyle(document.documentElement).getPropertyValue('--primary-color').trim();
-            drop.style.color = primaryColor;
-            
+            drop.style.color = resolvedColor;
+
             container.appendChild(drop);
-            
+
             setTimeout(() => {
                 if (drop.parentNode) {
                     drop.parentNode.removeChild(drop);
                 }
-            }, 8000);
+            }, (baseDuration + 4) * 1000);
         };
 
-        // Create rain drops continuously
+        // Create rain drops continuously with density-based interval
         const rainInterval = setInterval(() => {
             if (this.isLoaded) {
                 createRainDrop();
             }
-        }, 200);
-        
+        }, intervalMs);
+
         this.cryptoAnimationIntervals.push(rainInterval);
     }
 

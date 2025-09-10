@@ -6,10 +6,10 @@ AFFILIATE WEBSITE TEMPLATE - CONFIGURATION
 */
 
 // ========== MAIN SETTINGS - EDIT THESE LINES ONLY ==========
-const NICHE = "Gaming Laptops";                          // ← Your niche (e.g., "Gaming Laptops", "Coffee Makers")
-const PRODUCT_TYPE = "Gaming Laptops";                   // ← Product type eg. "Gaming Laptops"
-const AUDIENCE = "Laptop Buyers";                       // ← Target audience eg. "Gamers"
-const CONTACT_EMAIL = "contact@laptopworld.com";           // ← Your contact email "eg. contact@yoursite.com"
+const NICHE = "Crypto Casinos";                          // ← Your niche (e.g., "Gaming Laptops", "Coffee Makers")
+const PRODUCT_TYPE = "Crypto Casino";                   // ← Product type eg. "Gaming Laptops"
+const AUDIENCE = "Global crypto gamblers";                       // ← Target audience eg. "Gamers"
+const CONTACT_EMAIL = "contact@RollReviews.com";           // ← Your contact email "eg. contact@yoursite.com"
 // const SITE_URL = "{{Site URL}}";                // ← COMMENTED OUT - using smart detection below instead
 
 
@@ -29,29 +29,29 @@ const SITE_URL = (() => {
     }
     
     // Production URL - CHANGE THIS to your live domain
-    const prodUrl = "https://dctop10x.com";
+    const prodUrl = "https://rollreviews.com";
     console.log('🌍 Production mode detected - Using URL:', prodUrl);
     return prodUrl;
 })();
 
 
-const FAVICON = "./assets/images/laptop_test/tech_icon_logo.png";       // ← Your favicon path (browser tab icon)
+const FAVICON = "./assets/images/casino_test/dice2_icon.png";       // ← Your favicon path (browser tab icon)
 
 // Don't touch INDEX_PAGE_TITLE - it's automatically generated from the settings above
-const INDEX_PAGE_TITLE = "Top 10 Gaming Laptops - Best Laptop Reviews 2025"; // ← Homepage browser tab title 
+const INDEX_PAGE_TITLE = "Top 10 Crypto Casinos - Best Bitcoin & Crypto Casinos 2025"; // ← Homepage browser tab title 
 
 // ========== TRUST INDICATORS - EDIT THESE ==========
-const REVIEW_COUNT = "10 million";                      // ← Number of reviews "+"
-const USER_COUNT = "1 million";                         // ← Users helped "+"
-const LAST_UPDATE = "August 2025";                   // ← Last updated
-const NUMBER_TESTED = "1000"                    // ← Products tested "+" this is for the Editor's choice section
+const REVIEW_COUNT = "50 million";                      // ← Number of reviews "+"
+const USER_COUNT = "5 million";                         // ← Users helped "+"
+const LAST_UPDATE = "September 2025";                   // ← Last updated
+const NUMBER_TESTED = "50"                    // ← Products tested "+" this is for the Editor's choice section
 
 // ========== HERO SECTION CONFIGURATION ==========
 const HERO_CONFIG = {
     // Hero image settings
     image: {
-        src: "./assets/images/laptop_test/laptop_group_pic.webp",  // ← Change this to use different hero image
-        alt: "{{PRODUCT_TYPE}} Product Reviews",  // ← Alt text for the hero image (shows what the site reviews)
+        src: "./assets/images/casino_test/casino18.jpg",  // ← Change this to use different hero image
+        alt: "Top 10 Crypto Casinos",  // ← Alt text for the hero image (shows what the site reviews)
         fallback: "./assets/images/hero-image.jpg"  // ← Fallback image if main image fails to load
     },
     
@@ -98,7 +98,7 @@ const EDITORS_CHOICE_CONFIG = {
     // =============================================
     // Option 1: Use any product from your product list
     // Change this to any product key: 'product1', 'product2', 'product3', etc.
-    selectedProduct: 'product2',  // ← CHANGE THIS LINE TO SWITCH PRODUCTS
+    selectedProduct: 'product1',  // ← CHANGE THIS LINE TO SWITCH PRODUCTS
     
     // =============================================
     // EDITOR'S CHOICE BADGE CONFIGURATION
@@ -118,23 +118,23 @@ const EDITORS_CHOICE_CONFIG = {
     
     // Manual override data (only used if useManualOverride is true)
     manualOverride: {
-        name: "Apple MacBook Pro M4 Max",
+        name: "ROCKETPOT Casino",
         
         // =============================================
         // TITLE DISPLAY CONFIGURATION
         // =============================================
         titleDisplay: {
             type: 'combined',                    // ← 'text', 'image', or 'combined'
-            logoImage: './assets/images/laptop_test/apple_logo.png', // ← Logo image path
-            logoScale: 2.0,                  // ← Logo scaling (1.0 = 100%, 1.5 = 150%, etc.)
-            logoAlt: 'Apple MacBook Pro Logo', // ← Alt text for logo
+            logoImage: './assets/images/casino_test/rocketpot_rocket_2D.png', // ← Logo image path (leave as-is)
+            logoScale: 3.0,                  // ← Logo scaling (1.0 = 100%, 1.5 = 150%, etc.)
+            logoAlt: 'Rocketpot Casino Logo', // ← Alt text for logo
             gap: '24px'                      // ← Gap between logo and text in combined mode (e.g., '24px', '-10px', '2rem', '-50px' for overlapping)
         },
-        description: "Our #1 Editor's Pick - The MacBook Pro M4 Max stands out with exceptional performance, stunning Liquid Retina XDR display, and industry-leading battery life. Its M4 Max chip delivers unmatched power for creative professionals.",
-        productLogo: "./assets/images/laptop_test/apple_logo_black_text.png",
-        productImage: "./assets/images/laptop_test/macbook-pro.jpg",
+        description: "Our #1 Editor's Pick - Rocketpot stands out with exceptional security, massive game selection, and industry-leading bonuses. Their instant crypto withdrawals and provably fair gaming make them the gold standard.",
+        productLogo: "./assets/images/casino_test/rocketpot_text_logo_white.webp",
+        productImage: "./assets/images/casino_test/rocketpot_website.webp",
         rating: 4.9,
-        reviewCount: 2547,
+        reviewCount: 6547,
 
         // =============================================
         // RANK BADGE DISPLAY SETTINGS
@@ -146,27 +146,27 @@ const EDITORS_CHOICE_CONFIG = {
         
         // ========== UNIVERSAL TEMPLATE FIELDS ==========
         // Physical Products (default)
-        price: "£3,999",
-        originalPrice: "£4,299",
-        discount: "7% OFF",
+        price: "",
+        originalPrice: "",
+        discount: "",
         
         // Casino Websites
-        welcomeBonus: "Free AppleCare+ for 1 Year",
-        welcomePackage: "M4 Max + 32GB RAM + 1TB SSD",
-        addedBonus: "21-Hour Battery Life",
+        welcomeBonus: "100% Deposit Bonus, up to $10,000",
+        welcomePackage: "Tournaments & cash drops daily",
+        addedBonus: "Earn up to 20% cashback now!",
         
         // Sports Betting
-        signupBonus: "£100 Free Bet",
-        oddsBoost: "50% Odds Boost",
-        freeBet: "£25 Risk-Free Bet",
+        signupBonus: "",
+        oddsBoost: "",
+        freeBet: "",
         
         // Software/SaaS
-        monthlyPrice: "£166/month",
-        yearlyPrice: "£1,999/year",
-        trialPeriod: "14-day free trial",
+        monthlyPrice: "",
+        yearlyPrice: "",
+        trialPeriod: "",
         
-        affiliateLink: "https://www.apple.com/uk/shop/buy-mac/macbook-pro/14-inch-m4-max",
-        ctaText: "Buy Now",
+        affiliateLink: "https://rocketpot.io/",
+        ctaText: "Join Today!",
         
         /*
         logoScale: {
@@ -226,9 +226,9 @@ const EDITORS_CHOICE_CONFIG = {
 
         // CTA section configuration for detailed reviews
         cta: {
-            title: "Get the Ultimate Creative Powerhouse!",
-            description: "Experience unmatched performance with the M4 Max MacBook Pro!",
-            boxInfo: "Best laptop for creative professionals - unmatched performance and battery life!",
+            title: "Play fast. Withdraw faster.",
+            description: "Rocketpot's exceptional security, massive game selection, and industry-leading bonuses make them the gold standard.",
+            boxInfo: "Hidden Gem in the crypto casino world",
             // CTA box display controls
             display: {
                 showTitle: false,        // Show/hide CTA title
@@ -238,45 +238,41 @@ const EDITORS_CHOICE_CONFIG = {
             }
         },
         
-        // Features for product cards (short list) - LAPTOP FEATURES
+        // Features for product cards (short list) - CASINO FEATURES
         features: [
-            { text: "M4 Max 16-Core CPU", icon: "fas fa-microchip" },
-            { text: "40-Core GPU Performance", icon: "fas fa-desktop" },
-            { text: "16-inch Liquid Retina XDR", icon: "fas fa-tv" },
-            { text: "21-Hour Battery Life", icon: "fas fa-battery-full" },
-            { text: "32GB Unified Memory", icon: "fas fa-memory" }
+            { text: "Instant crypto withdrawals", icon: "fas fa-bolt" },
+            { text: "Multi‑coin support (BTC/ETH/USDT etc.)", icon: "fas fa-coins" },
+            { text: "3,000+ slots & live dealer", icon: "fas fa-dice" },
+            { text: "Daily tournaments & cash drops", icon: "fas fa-trophy" },
+            { text: "Provably fair gaming (select titles)", icon: "fas fa-check" }
         ],
         
         // Detailed review content
         fullReview: {
-            tagline: "The ultimate creative powerhouse with groundbreaking M4 Max performance",
+            tagline: "Crypto casino with instant payouts and rich cashback",
             paragraphs: [
-                "The MacBook Pro M4 Max represents the pinnacle of laptop technology. After extensive testing, we've confirmed this laptop offers performance that surpasses any other laptop in its class, making it our clear Editor's Choice.",
-                "What makes this MacBook truly exceptional is its revolutionary M4 Max chip with 16-core CPU and 40-core GPU, delivering unprecedented performance for video editing, 3D rendering, and creative workflows that professionals demand.",
-                "Our comprehensive testing confirmed the MacBook Pro M4 Max delivers unmatched performance, exceptional build quality, and industry-leading 21-hour battery life that exceeds all expectations for a high-performance laptop."
+                "Rocketpot pairs a massive game selection with instant crypto withdrawals and a clean, responsive UI. Funding and cashouts are streamlined across major coins.",
+                "Ongoing value comes via tournaments, cash drops, and tiered cashback that rewards active play. Support coverage and responsible‑gaming tooling round out a mature product.",
+                "If you want a polished, crypto‑first casino that emphasizes speed, bonuses, and variety, Rocketpot is an easy top pick."
             ]
         },
         
-        // Perks for product cards and detailed reviews - LAPTOP PERKS
+        // Perks for product cards and detailed reviews - CASINO PERKS
         perks: [
-            { text: "M4 Max Chip Performance", icon: "fas fa-rocket" },
-            { text: "Premium Aluminum Build", icon: "fas fa-shield-alt" },
-            { text: "Liquid Retina XDR Display", icon: "fas fa-tv" },
-            { text: "21-Hour Battery Life", icon: "fas fa-battery-full" },
-            { text: "Thunderbolt 5 Ports", icon: "fas fa-bolt" },
-            { text: "Studio-Quality Mics", icon: "fas fa-microphone" },
-            { text: "1080p FaceTime Camera", icon: "fas fa-camera" },
-            { text: "AppleCare+ Available", icon: "fas fa-headset" }
+            { text: "Up to 20% cashback (tiers)", icon: "fas fa-gem" },
+            { text: "Multi‑language interface", icon: "fas fa-globe" },
+            { text: "Mobile‑first experience", icon: "fas fa-mobile-alt" },
+            { text: "24/7 support availability", icon: "fas fa-headset" },
+            { text: "Responsible gaming tools", icon: "fas fa-user-shield" }
         ],
         
-        // Technical specifications - LAPTOP SPECS
+        // Technical specifications - CASINO SPECS
         specifications: [
-            { name: "Processor", value: "Apple M4 Max (16-core CPU, 40-core GPU)", icon: "fas fa-microchip" },
-            { name: "Memory", value: "32GB unified memory, up to 128GB available", icon: "fas fa-memory" },
-            { name: "Storage", value: "1TB SSD, configurable up to 8TB", icon: "fas fa-hdd" },
-            { name: "Display", value: "16-inch Liquid Retina XDR, 120Hz ProMotion", icon: "fas fa-tv" },
-            { name: "Battery", value: "100Wh lithium-polymer, up to 21 hours", icon: "fas fa-battery-full" },
-            { name: "Connectivity", value: "Thunderbolt 5, HDMI, MagSafe 3, Wi-Fi 7", icon: "fas fa-wifi" }
+            { name: "License", value: "Curaçao", icon: "fas fa-certificate" },
+            { name: "Cryptos", value: "BTC, ETH, LTC, BCH, DOGE, USDT (and more)", icon: "fas fa-coins" },
+            { name: "Withdrawals", value: "Instant to ~1 hr typical", icon: "fas fa-clock" },
+            { name: "Providers", value: "Evolution, Pragmatic, Hacksaw, Nolimit City", icon: "fas fa-th" },
+            { name: "Provably Fair", value: "Available on select titles", icon: "fas fa-check" }
         ]
     }
     
@@ -313,1633 +309,664 @@ window.EDITORS_CHOICE_CONFIG = EDITORS_CHOICE_CONFIG;
 const PRODUCTS_CONFIG = {
     // Product 1 Configuration - #1 Ranked Gaming Laptop - ASUS ZenBook Pro 14 OLED
     product1: {
-        name: "ASUS ZenBook Pro 14 OLED",
-        description: "The ZenBook Pro 14 OLED combines Intel Core i9 performance with a stunning 14.5-inch OLED touchscreen, delivering exceptional creative power in an ultra-portable design.",
-        productLogo: "./assets/images/laptop_test/ASUS_logo_white.png",     // Product logo for content area
-        productImage: "./assets/images/laptop_test/ASUS_ZenBook_Pro_14_OLED.png",          // Main product image for grid view and reviews
+        name: "Stake",
+        description: "Stake blends 3,000+ games, originals, and a VIP program inside a minimalist, lightning-quick UI. It supports 20+ cryptocurrencies and emphasizes instant crypto withdrawals with no house-imposed limits.",
+        productLogo: "./assets/images/casino_test/stake_text_logo_white.png",     // Product logo for content area (leave asset path)
+        productImage: "./assets/images/casino_test/stake_website.webp",          // Main product image (leave asset path)
         logoScale: {
-            grid: 2.0,    // Scale for grid view (1.0 = 100%, 1.2 = 120%, etc.)
-            list: 1.5,    // Scale for list view
+            grid: 1.9,
+            list: 1.2,
             tablet: {
-                grid: 1.5,  // Scale for tablet grid view
-                list: 1.0   // Scale for tablet list view
+                grid: 1.5,
+                list: 1.2
             }
         },
-        
-        // Product image scaling settings for product cards
-        imageScale: {
-            grid: 1.0,       // Scale for product image in grid view
-            list: 1.0        // Scale for product image in list view
-        },
-        
-        // Product image positioning settings for product cards
-        imagePositioning: {
-            grid: {
-                objectPosition: 'center',  // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'cover'         // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
-        },
-        
-        // Logo positioning settings for product cards
-        logoPositioning: {
-            grid: {
-                left: '0px',     // Horizontal positioning for grid view
-                top: '0px'       // Vertical positioning for grid view
-            },
-            list: {
-                left: '0px',     // Horizontal positioning for list view
-                top: '0px'       // Vertical positioning for list view
-            }
-        },
-        
-        // Detailed review scaling settings
-        detailedReviewScale: {
-            productImage: 1.0,  // Scale for product image in detailed reviews
-            productLogo: 2.0    // Scale for product logo in detailed reviews
-        },
-        
-        // Detailed review positioning settings
+        imageScale: { grid: 1.0, list: 1.0 },
+        imagePositioning: { grid: { objectPosition: 'center', objectFit: 'cover' } },
+        logoPositioning: { grid: { left: '0px', top: '0px' }, list: { left: '0px', top: '0px' } },
+        detailedReviewScale: { productImage: 1.0, productLogo: 2.0 },
         detailedReviewPositioning: {
-            productLogo: {
-                left: '0px',     // Horizontal positioning for detailed review logo
-                top: '-0.5rem'   // Vertical positioning for detailed review logo
-            },
-            productImage: {
-                left: '0px',           // Horizontal positioning for detailed review image
-                top: '0px',            // Vertical positioning for detailed review image
-                objectPosition: 'center', // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'cover'     // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
+            productLogo: { left: '0px', top: '-0.5rem' },
+            productImage: { left: '0px', top: '0px', objectPosition: 'center', objectFit: 'cover' }
         },
-        
-        // Product ranking and affiliate data
         rank: 1,
-        rankBadge: "TOP RATED",
+        rankBadge: "TOP UX",
         rating: 4.8,
-        reviewCount: 3156,
-        
-        // =============================================
-        // RANK BADGE DISPLAY SETTINGS
-        // =============================================
-        badgeSettings: {
-            showOnProductCard: true,     // ← Show/hide rank badge on product cards (true/false)
-            showOnDetailedReview: true   // ← Show/hide rank badge on detailed review cards (true/false)
-        },
-        
-        // ========== UNIVERSAL TEMPLATE FIELDS ==========
-        // Physical Products (default)
-        price: "£2,299",
-        originalPrice: "£2,699",
-        discount: "15% OFF",
-        
-        // Casino Websites
-        welcomeBonus: "Free ASUS Pen 2.0 Included",
-        welcomePackage: "Intel Core i9 + 32GB RAM + 1TB SSD",
-        addedBonus: "14.5-inch OLED Touchscreen",
-        
-        // Sports Betting
-        signupBonus: "£100 Free Bet",
-        oddsBoost: "50% Odds Boost",
-        freeBet: "£25 Risk-Free Bet",
-        
-        // Software/SaaS
-        monthlyPrice: "£29/month",
-        yearlyPrice: "£290/year",
-        trialPeriod: "30-day free trial",
-        
-        // Streaming Services
-        // monthlyPrice: "£12.99/month", (same as SaaS)
-        // trialPeriod: "7-day free trial", (same as SaaS)
-        contentHighlight: "4K Ultra HD + HDR",
-        
-        // VPN Services
-        // monthlyPrice: "£9.99/month", (same as SaaS)
-        serverCount: "5000+ Servers",
-        speedInfo: "10Gbps Speed",
-        
-        // Crypto Exchanges
-        tradingFee: "0.1% Trading Fee",
-        supportedCoins: "500+ Coins",
-        securityRating: "A+ Security",
-        
-        // Web Hosting
-        // monthlyPrice: "£5.99/month", (same as SaaS)
-        storage: "100GB SSD",
-        uptime: "99.9% Uptime",
-        
-        // Restaurants
-        priceRange: "£15-25 per person",
-        cuisineType: "Italian Fine Dining",
-        specialOffer: "Happy Hour 4-6pm",
-        
-        // Hotels/Travel
-        roomRate: "£150/night",
-        amenities: "Pool, Spa, Gym",
-        locationScore: "Prime Downtown",
-        
-        affiliateLink: "https://www.asus.com/uk/laptops/for-creators/zenbook/zenbook-pro-14-oled-ux6404/",
-        ctaText: "Buy Now", // This will be overridden by template config if needed
-        
-        // CTA section configuration for detailed reviews
+        reviewCount: 5000,
+        badgeSettings: { showOnProductCard: true, showOnDetailedReview: true },
+        price: "",
+        originalPrice: "",
+        discount: "",
+        welcomeBonus: "Daily/weekly races & raffles",
+        welcomePackage: "Fast crypto withdrawals with no posted max",
+        addedBonus: "Stake Originals (Crash, Plinko, Dice)",
+        monthlyPrice: "",
+        yearlyPrice: "",
+        trialPeriod: "",
+        affiliateLink: "https://stake.com/",
+        ctaText: "Stake It",
         cta: {
-            title: "Creative Powerhouse Awaits!",
-            description: "Experience stunning OLED visuals and powerful performance with the ZenBook Pro 14 OLED!",
-            boxInfo: "Free ASUS Pen 2.0 included - Perfect for creative professionals!",
-            // CTA box display controls
-            display: {
-                showTitle: false,        // Show/hide CTA title
-                showDescription: false,  // Show/hide CTA description  
-                showBoxInfo: false,      // Show/hide additional box info
-                showPricingInfo: true   // Show/hide pricing info section
-            }
+            title: "Ready to Join the Community?",
+            description: "Rakeback and VIP rewards",
+            boxInfo: "Most popular crypto casino",
+            display: { showTitle: false, showDescription: false, showBoxInfo: false, showPricingInfo: true }
         },
-        
-        // Features for product cards (short list)
         features: [
-            { text: "Intel Core i9-13900H", icon: "fas fa-microchip" },
-            { text: "14.5-inch OLED Touchscreen", icon: "fas fa-tv" },
-            { text: "NVIDIA RTX 4070", icon: "fas fa-desktop" },
-            { text: "32GB DDR5 Memory", icon: "fas fa-memory" },
-            { text: "ASUS Pen 2.0 Included", icon: "fas fa-pen" }
+            { text: "Stake Originals (Crash/Plinko/Dice)", icon: "fas fa-bolt" },
+            { text: "20+ cryptocurrencies supported", icon: "fas fa-coins" },
+            { text: "Instant crypto withdrawals", icon: "fas fa-exchange-alt" },
+            { text: "3,000+ games incl. live dealer", icon: "fas fa-gamepad" },
+            { text: "VIP rewards & weekly races", icon: "fas fa-trophy" }
         ],
-        
-        // Detailed review content
         fullReview: {
-            tagline: "The ultimate OLED creative laptop with stunning visuals and powerful performance",
+            tagline: "Fast, sleek, crypto-first gaming at scale",
             paragraphs: [
-                "The ASUS ZenBook Pro 14 OLED represents the perfect blend of creativity and performance. After extensive testing, we've confirmed this laptop offers exceptional OLED visuals and powerful Intel Core i9 performance, making it our clear #1 choice.",
-                "This laptop impressed our testing team with its stunning 14.5-inch OLED touchscreen and powerful Intel Core i9-13900H processor. The NVIDIA RTX 4070 graphics and included ASUS Pen 2.0 provide exceptional value for creative professionals.",
-                "After extensive testing across video editing, digital art, and demanding creative workflows, the ZenBook Pro 14 OLED proved to be the best choice for users seeking OLED brilliance and powerful performance in a portable package."
+                "Stake nails performance and polish with a clean, instant UI. The catalog spans thousands of games plus Stake Originals, and instant crypto withdrawals with no posted max are a major draw.",
+                "Value comes via ongoing races and raffles; VIP perks are responsive. Support live chat opens post-login. Broad coin support and on-ramps make funding simple.",
+                "Against rivals, Stake is the speed/UX benchmark. While BC.Game may headline bigger bonus ceilings, Stake's tooling and payouts keep it #1 for all-around crypto casino experience."
             ]
         },
-        
-        // Perks for product cards and detailed reviews - Simple format: text + icon
         perks: [
-            { text: "14.5-inch OLED Touchscreen", icon: "fas fa-tv" },
-            { text: "Intel Core i9 Performance", icon: "fas fa-rocket" },
-            { text: "NVIDIA RTX 4070 Graphics", icon: "fas fa-desktop" },
-            { text: "ASUS Pen 2.0 Included", icon: "fas fa-pen" },
-            { text: "Thunderbolt 4 Ports", icon: "fas fa-bolt" },
-            { text: "Premium Build Quality", icon: "fas fa-shield-alt" },
-            { text: "NumberPad 2.0", icon: "fas fa-calculator" },
-            { text: "Harman Kardon Audio", icon: "fas fa-volume-up" }
+            { text: "No minimum crypto deposit (network fees only)", icon: "fas fa-wallet" },
+            { text: "Multi-language + localization", icon: "fas fa-globe" },
+            { text: "Rapid VIP response & bonuses", icon: "fas fa-gem" },
+            { text: "Mobile-first browser experience", icon: "fas fa-mobile-alt" },
+            { text: "Responsible gaming tools", icon: "fas fa-user-shield" }
         ],
-        
-        // Technical specifications - Simple format: name + value + icon
         specifications: [
-            { name: "Processor", value: "Intel Core i9-13900H (14-core, up to 5.4GHz)", icon: "fas fa-microchip" },
-            { name: "Graphics", value: "NVIDIA GeForce RTX 4070, 8GB GDDR6", icon: "fas fa-desktop" },
-            { name: "Memory", value: "32GB DDR5-4800, dual-channel", icon: "fas fa-memory" },
-            { name: "Storage", value: "1TB PCIe 4.0 SSD, upgradeable", icon: "fas fa-hdd" },
-            { name: "Display", value: "14.5-inch OLED, 2880x1800, 120Hz, touch", icon: "fas fa-tv" },
-            { name: "Battery", value: "96Wh lithium-polymer, up to 15 hours", icon: "fas fa-battery-full" }
+            { name: "License", value: "Curaçao + Brazil SIGAP system", icon: "fas fa-shield-alt" },
+            { name: "Cryptos", value: "BTC, ETH, LTC, DOGE, XRP, TRX, USDT/USDC, BNB, MATIC, more", icon: "fas fa-coins" },
+            { name: "Withdrawals", value: "Typically 0–1 hr; no posted limits", icon: "fas fa-clock" },
+            { name: "Providers", value: "Evolution, Pragmatic, Play'n GO, Hacksaw, Nolimit City", icon: "fas fa-th" },
+            { name: "RG Tools", value: "Limits, time-outs, self-exclusion", icon: "fas fa-balance-scale" }
         ]
     },
     
     // Product 2 Configuration - #2 Ranked Gaming Laptop - Dell XPS 15 Plus
     product2: {
-        name: "Dell XPS 15 Plus",
-        description: "The Dell XPS 15 Plus combines stunning design with powerful performance, featuring Intel Core i9-14900H and a gorgeous 4K+ OLED Infinity Edge display.",
-        productLogo: "./assets/images/laptop_test/Dell_logo.png",
-        productImage: "./assets/images/laptop_test/Dell_XPS_15_Plus.jpg",
-        logoScale: {
-            grid: 1.5,
-            list: 1.0,
-            tablet: {
-                grid: 1.5,  // Scale for tablet grid view
-                list: 1.0   // Scale for tablet list view
-            }
-        },
-        
-        // Product image scaling settings for product cards
-        imageScale: {
-            grid: 1.0,       // Scale for product image in grid view
-            list: 1.0        // Scale for product image in list view
-        },
-        
-        // Product image positioning settings for product cards
-        imagePositioning: {
-            grid: {
-                objectPosition: 'center',  // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'cover'         // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
-        },
-        
-        // Logo positioning settings for product cards
-        logoPositioning: {
-            grid: {
-                left: '0px',    // Horizontal positioning for grid view
-                top: '0rem'    // Vertical positioning for grid view
-            },
-            list: {
-                left: '0px',     // Horizontal positioning for list view
-                top: '0rem'       // Vertical positioning for list view
-            }
-        },
-        
-        // Detailed review scaling settings
-        detailedReviewScale: {
-            productImage: 1.0,  // Scale for product image in detailed reviews
-            productLogo: 1.5    // Scale for product logo in detailed reviews
-        },
-        
-        // Detailed review positioning settings
+        name: "BC.Game",
+        description: "BC.Game mixes an 8,000+ game lobby with 'BC Originals' and an active community. Its four-tier deposit bonus architecture headlines the value proposition, plus 24/7 support and crypto-first payments.",
+        productLogo: "./assets/images/casino_test/bc.game_text_logo_white.webp",
+        productImage: "./assets/images/casino_test/bc.game_website.webp",
+        logoScale: { grid: 4.0, list: 2.5, tablet: { grid: 3.2, list: 2.5 } },
+        imageScale: { grid: 1.0, list: 1.0 },
+        imagePositioning: { grid: { objectPosition: 'center', objectFit: 'cover' } },
+        logoPositioning: { grid: { left: '0px', top: '0rem' }, list: { left: '0px', top: '0rem' } },
+        detailedReviewScale: { productImage: 1.0, productLogo: 4.0 },
         detailedReviewPositioning: {
-            productLogo: {
-                left: '0px',    // Horizontal positioning for detailed review logo
-                top: '-0.55rem'   // Vertical positioning for detailed review logo
-            },
-            productImage: {
-                left: '0px',           // Horizontal positioning for detailed review image
-                top: '0px',            // Vertical positioning for detailed review image
-                objectPosition: 'center', // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'cover'     // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
+            productLogo: { left: '0px', top: '-0.25rem' },
+            productImage: { left: '0px', top: '0px', objectPosition: 'top left', objectFit: 'fill' }
         },
-        
-        // Product ranking and affiliate data
         rank: 2,
-        rankBadge: "BEST PREMIUM DESIGN",
+        rankBadge: "BIG BONUS",
         rating: 4.7,
-        reviewCount: 2156,
-        
-        // =============================================
-        // RANK BADGE DISPLAY SETTINGS
-        // =============================================
-        badgeSettings: {
-            showOnProductCard: true,     // ← Show/hide rank badge on product cards (true/false)
-            showOnDetailedReview: true   // ← Show/hide rank badge on detailed review cards (true/false)
-        },
-        
-        // ========== UNIVERSAL TEMPLATE FIELDS ==========
-        // Physical Products (default)
-        price: "£2,799",
-        originalPrice: "£3,199",
-        discount: "13% OFF",
-        
-        // Casino Websites
-        welcomeBonus: "Free Dell Premium Support",
-        welcomePackage: "Intel Core i9 + 32GB RAM + 1TB SSD",
-        addedBonus: "4K+ OLED Display",
-        
-        // Sports Betting
-        signupBonus: "£75 Free Bet",
-        oddsBoost: "25% Odds Boost",
-        freeBet: "£15 Risk-Free Bet",
-        
-        // Software/SaaS
-        monthlyPrice: "£19/month",
-        yearlyPrice: "£190/year",
-        trialPeriod: "14-day free trial",
-        
-        // Streaming Services
-        contentHighlight: "HD + 4K Content",
-        
-        // VPN Services
-        serverCount: "3000+ Servers",
-        speedInfo: "5Gbps Speed",
-        
-        // Crypto Exchanges
-        tradingFee: "0.25% Trading Fee",
-        supportedCoins: "300+ Coins",
-        securityRating: "A Security",
-        
-        // Web Hosting
-        storage: "50GB SSD",
-        uptime: "99.8% Uptime",
-        
-        // Restaurants
-        priceRange: "£12-18 per person",
-        cuisineType: "American Comfort Food",
-        specialOffer: "Weekend Brunch Special",
-        
-        // Hotels/Travel
-        roomRate: "£120/night",
-        amenities: "Free WiFi, Breakfast",
-        locationScore: "Near Downtown",
-        
-        affiliateLink: "https://www.dell.com/en-uk/shop/scc/scr/laptops/appref=xps-product-line,all-intel-processors-processor-brand?gacd=9685798-5479-5761040-270826046-0&dgc=st&SA360CID=71700000105902657&gclsrc=aw.ds&&gad_source=1&gad_campaignid=19643557631&gbraid=0AAAAAD77IkeyT7jNIUiUnv4AWgT9hUczt&gclid=Cj0KCQjwn8XFBhCxARIsAMyH8BuAj_oNpY1oCE9EKocx-LLG4UhT-67RxXkWlhgWtSxWVN5Lcj94faIaAkygEALw_wcB",
-        ctaText: "Buy Now",
-        
-        // CTA section configuration for detailed reviews
+        reviewCount: 3000,
+        badgeSettings: { showOnProductCard: true, showOnDetailedReview: true },
+        price: "",
+        originalPrice: "",
+        discount: "",
+        welcomeBonus: "Up to $20,000 (multi-tier)",
+        welcomePackage: "Four-tier matched deposits",
+        addedBonus: "Daily cashback & quests",
+        monthlyPrice: "",
+        yearlyPrice: "",
+        trialPeriod: "",
+        affiliateLink: "https://bc.game/",
+        ctaText: "Unlock Bonus",
         cta: {
-            title: "Experience Premium Design Excellence!",
-            description: "Get the Dell XPS 15 Plus with stunning 4K+ OLED display!",
-            boxInfo: "Premium laptop with exceptional design and powerful performance!",
-            // CTA box display controls
-            display: {
-                showTitle: false,        // Show/hide CTA title
-                showDescription: false,  // Show/hide CTA description  
-                showBoxInfo: false,      // Show/hide additional box info
-                showPricingInfo: true   // Show/hide pricing info section
-            }
+            title: "Unlock the 4-tier bonus.",
+            description: "Massive ceilings with flexible deposit ladders and micro crypto minimums.",
+            boxInfo: "Big headline bonus + 8,000+ games",
+            display: { showTitle: false, showDescription: false, showBoxInfo: false, showPricingInfo: true }
         },
-        
-        // Features for product cards (short list)
         features: [
-            { text: "Intel Core i9-14900H", icon: "fas fa-microchip" },
-            { text: "32GB DDR5 Memory", icon: "fas fa-memory" },
-            { text: "15.6-inch 4K+ OLED", icon: "fas fa-tv" },
-            { text: "18-Hour Battery Life", icon: "fas fa-battery-full" },
-            { text: "Infinity Edge Design", icon: "fas fa-expand" }
+            { text: "Four-tier matched deposit structure", icon: "fas fa-layer-group" },
+            { text: "BC Originals crash/limbo/dice", icon: "fas fa-bolt" },
+            { text: "8,000+ games + micro-stakes", icon: "fas fa-gamepad" },
+            { text: "24/7 multilingual support", icon: "fas fa-headset" },
+            { text: "Integrated sportsbook", icon: "fas fa-futbol" }
         ],
-        
-        // Detailed review content
         fullReview: {
-            tagline: "Premium design meets exceptional performance in a stunning package",
+            tagline: "Four-tier bonuses, thousands of games",
             paragraphs: [
-                "The Dell XPS 15 Plus stands out with its premium design and powerful Intel Core i9-14900H processor. Our testing revealed exceptional build quality and a stunning 4K+ OLED Infinity Edge display that rivals any premium laptop.",
-                "This laptop impressed our team with its sleek design, excellent keyboard, and outstanding display quality. The 18-hour battery life and premium materials make it an excellent choice for professionals who value both performance and aesthetics.",
-                "After extensive testing, the XPS 15 Plus proved to be an outstanding choice for users seeking a premium Windows laptop with exceptional design, powerful performance, and a gorgeous display."
+                "BC.Game suits promo hunters with flexible deposit ladders and tiny crypto minimums for low-friction testing.",
+                "Originals and 8,000+ games broaden appeal beyond standard providers; payments are smooth across major coins.",
+                "Safety Index ~7/10 at Casino.Guru — for bigger bonuses it's great; for highest safety, see BitStarz/Cloudbet."
             ]
         },
-        
-        // Perks for product cards and detailed reviews
         perks: [
-            { text: "Premium Build Quality", icon: "fas fa-gem" },
-            { text: "4K+ OLED Display", icon: "fas fa-tv" },
-            { text: "Infinity Edge Design", icon: "fas fa-expand" },
-            { text: "18-Hour Battery Life", icon: "fas fa-battery-full" },
-            { text: "Thunderbolt 4 Ports", icon: "fas fa-bolt" },
-            { text: "Precision Touchpad", icon: "fas fa-hand-pointer" },
-            { text: "Windows Hello", icon: "fas fa-fingerprint" },
-            { text: "Dell Premium Support", icon: "fas fa-headset" }
+            { text: "Daily/weekly cashback & quests", icon: "fas fa-calendar-check" },
+            { text: "Rakeback-style VIP", icon: "fas fa-gem" },
+            { text: "Spin-to-win & chat rains", icon: "fas fa-comments" },
+            { text: "Tiny crypto minimums", icon: "fas fa-wallet" },
+            { text: "Wide coin coverage", icon: "fas fa-coins" }
         ],
-        
-        // Technical specifications
         specifications: [
-            { name: "Processor", value: "Intel Core i9-14900H (14-core, up to 5.4GHz)", icon: "fas fa-microchip" },
-            { name: "Memory", value: "32GB DDR5-4800, up to 64GB available", icon: "fas fa-memory" },
-            { name: "Storage", value: "1TB PCIe 4.0 SSD, up to 2TB available", icon: "fas fa-hdd" },
-            { name: "Display", value: "15.6-inch 4K+ OLED Infinity Edge, HDR 400", icon: "fas fa-tv" },
-            { name: "Battery", value: "86Wh lithium-polymer, up to 18 hours", icon: "fas fa-battery-full" },
-            { name: "Connectivity", value: "Thunderbolt 4, USB-C, Wi-Fi 7, Bluetooth 5.3", icon: "fas fa-wifi" }
+            { name: "License", value: "Curaçao", icon: "fas fa-shield-alt" },
+            { name: "Cryptos", value: "BTC, ETH, USDT, XRP, ADA, DOGE, BNB, more", icon: "fas fa-coins" },
+            { name: "Min Deposit (promo)", value: "$10+ fiat typical; crypto negligible", icon: "fas fa-dollar-sign" },
+            { name: "Live Dealer", value: "550+ tables (Evolution, Playtech)", icon: "fas fa-chess-board" },
+            { name: "Sportsbook", value: "Included", icon: "fas fa-futbol" }
         ]
     },
     
-    // Product 3 Configuration - #3 Ranked Crypto Casino - BC.Game
+    // Product 3 Configuration - #3 Ranked Crypto Casino - Cloudbet
     product3: {
-        name: "Microsoft Surface Laptop Studio 2",
-        description: "The Surface Laptop Studio 2 offers versatile design perfect for digital artists with Intel Core i7-14800H and unique PixelSense Flow display.",
-        productLogo: "./assets/images/laptop_test/microsoft_logo_grey.png",
-        productImage: "./assets/images/laptop_test/Microsoft_Surface_Laptop_Studio_2.avif",
-        logoScale: {
-            grid: 4.0,
-            list: 2.5,
-            tablet: {
-                grid: 3.2,  // Scale for tablet grid view
-                list: 1.0   // Scale for tablet list view
-            }
-        },
-        
-        // Product image scaling settings for product cards
-        imageScale: {
-            grid: 1.0,       // Scale for product image in grid view
-            list: 1.0        // Scale for product image in list view
-        },
-        
-        // Product image positioning settings for product cards
-        imagePositioning: {
-            grid: {
-                objectPosition: 'center',  // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'cover'         // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
-        },
-        
-        // Logo positioning settings for product cards
-        logoPositioning: {
-            grid: {
-                left: '0px',     // Horizontal positioning for grid view
-                top: '0px'       // Vertical positioning for grid view
-            },
-            list: {
-                left: '0px',     // Horizontal positioning for list view
-                top: '0px'       // Vertical positioning for list view
-            }
-        },
-        
-        // Detailed review scaling settings
-        detailedReviewScale: {
-            productImage: 1.0,  // Scale for product image in detailed reviews
-            productLogo: 2.0    // Scale for product logo in detailed reviews
-        },
-        
-        // Detailed review positioning settings
+        name: "Cloudbet",
+        description: "Since 2013—crypto sportsbook + casino with fast payouts, 35–40+ coins, and a balanced welcome. Strong safety ratings and clear help docs.",
+        productLogo: "./assets/images/casino_test/cloudbet_logo.png",
+        productImage: "./assets/images/casino_test/cloudbet_website.webp",
+        logoScale: { grid: 4.0, list: 2.8, tablet: { grid: 3.0, list: 1.9 } },
+        imageScale: { grid: 1.0, list: 1.0 },
+        imagePositioning: { grid: { objectPosition: 'center', objectFit: 'cover' } },
+        logoPositioning: { grid: { left: '0px', top: '0px' }, list: { left: '0px', top: '0px' } },
+        detailedReviewScale: { productImage: 1.0, productLogo: 3.0 },
         detailedReviewPositioning: {
-            productLogo: {
-                left: '0px',     // Horizontal positioning for detailed review logo
-                top: '-0.25rem'       // Vertical positioning for detailed review logo
-            },
-            productImage: {
-                left: '0px',           // Horizontal positioning for detailed review image
-                top: '0px',            // Vertical positioning for detailed review image
-                objectPosition: 'top left', // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'fill'     // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
+            productLogo: { left: '0px', top: '-0.25rem' },
+            productImage: { left: '0px', top: '0px', objectPosition: 'top left', objectFit: 'fill' }
         },
-        
-        // Product ranking and affiliate data
         rank: 3,
-        rankBadge: "BEST FOR CREATIVITY",
+        rankBadge: "TRACK RECORD",
         rating: 4.6,
-        reviewCount: 1843,
-        
-        // =============================================
-        // RANK BADGE DISPLAY SETTINGS
-        // =============================================
-        badgeSettings: {
-            showOnProductCard: true,     // ← Show/hide rank badge on product cards (true/false)
-            showOnDetailedReview: true   // ← Show/hide rank badge on detailed review cards (true/false)
-        },
-        
-        // ========== UNIVERSAL TEMPLATE FIELDS ==========
-        // Physical Products (default)
-        price: "£2,399",
-        originalPrice: "£2,699",
-        discount: "11% OFF",
-        
-        // Casino Websites
-        welcomeBonus: "Free Surface Pen Included",
-        welcomePackage: "Intel Core i7 + 32GB RAM + 1TB SSD",
-        addedBonus: "PixelSense Flow Touch",
-        
-        // Sports Betting
-        signupBonus: "£50 Free Bet",
-        oddsBoost: "20% Odds Boost",
-        freeBet: "£10 Risk-Free Bet",
-        
-        // Software/SaaS
-        monthlyPrice: "£9/month",
-        yearlyPrice: "£90/year",
-        trialPeriod: "7-day free trial",
-        
-        // Streaming Services
-        contentHighlight: "HD Content Library",
-        
-        // VPN Services
-        serverCount: "1500+ Servers",
-        speedInfo: "2Gbps Speed",
-        
-        // Crypto Exchanges
-        tradingFee: "0.5% Trading Fee",
-        supportedCoins: "150+ Coins",
-        securityRating: "B+ Security",
-        
-        // Web Hosting
-        storage: "25GB SSD",
-        uptime: "99.5% Uptime",
-        
-        // Restaurants
-        priceRange: "£8-15 per person",
-        cuisineType: "Fast Casual",
-        specialOffer: "Lunch Combo Deal",
-        
-        // Hotels/Travel
-        roomRate: "£89/night",
-        amenities: "Free WiFi, Parking",
-        locationScore: "Airport Area",
-        
-        affiliateLink: "https://www.microsoft.com/en-gb/d/surface-laptop-studio-2-for-business/935xfv68l29f?activetab=pivot:overviewtab",
-        ctaText: "Buy Now",
-        
-        // CTA section configuration for detailed reviews
+        reviewCount: 2500,
+        badgeSettings: { showOnProductCard: true, showOnDetailedReview: true },
+        price: "",
+        originalPrice: "",
+        discount: "",
+        welcomeBonus: "100% up to $2,500 + daily promos",
+        welcomePackage: "loyalty rewards",
+        addedBonus: "10% Rakeback",
+        affiliateLink: "https://www.cloudbet.com",
+        ctaText: "Join Now!",
         cta: {
-            title: "Unleash Your Creative Potential!",
-            description: "Get the versatile Surface Laptop Studio 2 for digital creativity!",
-            boxInfo: "Perfect laptop for digital artists and creative professionals!",
-            // CTA box display controls - Example with some elements hidden
-            display: {
-                showTitle: false,         // Show CTA title
-                showDescription: false,  // Hide CTA description  
-                showBoxInfo: false,       // Show additional box info
-                showPricingInfo: true   // Hide pricing info section
-            }
+            title: "Start with stablecoins",
+            description: "Since 2013 with fast withdrawals and dozens of coins.",
+            boxInfo: "High safety marks and clear banking pages",
+            display: { showTitle: false, showDescription: false, showBoxInfo: false, showPricingInfo: true }
         },
-        
-        // Features for product cards (short list)
         features: [
-            { text: "Intel Core i7-14800H", icon: "fas fa-microchip" },
-            { text: "32GB LPDDR5 Memory", icon: "fas fa-memory" },
-            { text: "14.4-inch PixelSense Flow", icon: "fas fa-tv" },
-            { text: "17-Hour Battery Life", icon: "fas fa-battery-full" },
-            { text: "Versatile 3-in-1 Design", icon: "fas fa-laptop" }
+            { text: "Sportsbook + casino hub", icon: "fas fa-futbol" },
+            { text: "30–40+ coins incl. stablecoins", icon: "fas fa-coins" },
+            { text: "Fast crypto withdrawals", icon: "fas fa-bolt" },
+            { text: "2,500+ games + top providers", icon: "fas fa-gamepad" },
+            { text: "Daily promos + clear docs", icon: "fas fa-file-alt" }
         ],
-        
-        // Detailed review content
         fullReview: {
-            tagline: "The ultimate creative workstation with versatile design and touch capabilities",
+            tagline: "Since 2013—crypto sportsbook + casino that pays fast",
             paragraphs: [
-                "The Surface Laptop Studio 2 excels as a creative powerhouse with its unique versatile design that transforms from laptop to studio to tablet. Our testing confirmed exceptional performance for digital art, design, and creative workflows.",
-                "This laptop impressed our team with its innovative PixelSense Flow display, excellent Surface Pen integration, and solid Intel Core i7-14800H performance. The 17-hour battery life ensures productivity throughout long creative sessions.",
-                "After extensive testing across various creative applications, the Surface Laptop Studio 2 proved to be the best choice for digital artists and creative professionals who need versatility and touch capabilities."
+                "Cloudbet's longevity and strong third‑party ratings make it a reliable hybrid option.",
+                "Clear payment pages and multi‑coin support ease onboarding for new crypto players.",
+                "Not the largest lobby, but well‑curated with consistently fast cashouts."
             ]
         },
-        
-        // Perks for product cards and detailed reviews
         perks: [
-            { text: "Versatile 3-in-1 Design", icon: "fas fa-laptop" },
-            { text: "PixelSense Flow Display", icon: "fas fa-tv" },
-            { text: "Surface Pen Included", icon: "fas fa-pen" },
-            { text: "17-Hour Battery Life", icon: "fas fa-battery-full" },
-            { text: "Thunderbolt 4 Support", icon: "fas fa-bolt" },
-            { text: "Windows Studio Effects", icon: "fas fa-camera" },
-            { text: "Precision Haptics", icon: "fas fa-hand-paper" },
-            { text: "Microsoft Complete", icon: "fas fa-shield-alt" }
+            { text: "Long operating history (2013)", icon: "fas fa-history" },
+            { text: "High safety index (8.7)", icon: "fas fa-shield-alt" },
+            { text: "Sports + casino in one", icon: "fas fa-layer-group" },
+            { text: "Stablecoins simplify bankroll", icon: "fas fa-dollar-sign" },
+            { text: "24/7 support", icon: "fas fa-headset" }
         ],
-        
-        // Technical specifications
         specifications: [
-            { name: "Processor", value: "Intel Core i7-14800H (20-core, up to 5.2GHz)", icon: "fas fa-microchip" },
-            { name: "Memory", value: "32GB LPDDR5, up to 64GB available", icon: "fas fa-memory" },
-            { name: "Storage", value: "1TB PCIe 4.0 SSD, up to 2TB available", icon: "fas fa-hdd" },
-            { name: "Display", value: "14.4-inch PixelSense Flow, 120Hz, 2400x1600", icon: "fas fa-tv" },
-            { name: "Battery", value: "58Wh lithium-polymer, up to 17 hours", icon: "fas fa-battery-full" },
-            { name: "Connectivity", value: "Thunderbolt 4, USB-A, Surface Connect, Wi-Fi 7", icon: "fas fa-wifi" }
+            { name: "License", value: "Curaçao", icon: "fas fa-certificate" },
+            { name: "Coins", value: "35–40+ supported", icon: "fas fa-coins" },
+            { name: "Games", value: "2,500+", icon: "fas fa-th" },
+            { name: "Safety Index", value: "8.7 (Casino.Guru)", icon: "fas fa-shield-alt" },
+            { name: "Welcome", value: "100% up to $2,500 (check site)", icon: "fas fa-gift" }
         ]
     },
     
-    // Product 4 Configuration - #4 Ranked Crypto Casino - Gamdom
+    // Product 4 Configuration - #4 Ranked Crypto Casino - Bitcasino.io
     product4: {
-        name: "Lenovo ThinkPad X1 Carbon Gen 13",
-        description: "The ThinkPad X1 Carbon Gen 13 offers exceptional durability and performance for business professionals with Intel Core i7-14700U and outstanding keyboard.",
-        productLogo: "./assets/images/laptop_test/Lenovo_logo.png",
-        productImage: "./assets/images/laptop_test/Lenovo_ThinkPad_X1_Carbon_Gen_13.avif",
-        logoScale: {
-            grid: 3.0,
-            list: 2.5,
-            tablet: {
-                grid: 2.5,  // Scale for tablet grid view
-                list: 1.2   // Scale for tablet list view
-            }
-        },
-        
-        // Product image scaling settings for product cards
-        imageScale: {
-            grid: 1.0,       // Scale for product image in grid view
-            list: 1.0        // Scale for product image in list view
-        },
-        
-        // Product image positioning settings for product cards
-        imagePositioning: {
-            grid: {
-                objectPosition: 'top left',  // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'cover'         // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
-        },
-        
-        // Logo positioning settings for product cards
-        logoPositioning: {
-            grid: {
-                left: '0px',     // Horizontal positioning for grid view
-                top: '0rem'      // Vertical positioning for grid view
-            },
-            list: {
-                left: '0px',     // Horizontal positioning for list view
-                top: '0rem'      // Vertical positioning for list view
-            }
-        },
-        
-        // Detailed review scaling settings
-        detailedReviewScale: {
-            productImage: 1.0,  // Scale for product image in detailed reviews
-            productLogo: 2.5    // Scale for product logo in detailed reviews
-        },
-        
-        // Detailed review positioning settings
+        name: "Bitcasino.io",
+        description: "Sleek crypto casino that lets you filter by RTP in the lobby—rare transparency players love. Quick withdrawals and strong provider mix.",
+        productLogo: "./assets/images/casino_test/bitcasino_text_logo_white.webp",
+        productImage: "./assets/images/casino_test/bitcasino_website.webp",
+        logoScale: { grid: 3.0, list: 2.5, tablet: { grid: 2.5, list: 1.5 } },
+        imageScale: { grid: 1.0, list: 1.0 },
+        imagePositioning: { grid: { objectPosition: 'top left', objectFit: 'fill' } },
+        logoPositioning: { grid: { left: '0px', top: '0rem' }, list: { left: '0px', top: '0rem' } },
+        detailedReviewScale: { productImage: 1.0, productLogo: 3.0 },
         detailedReviewPositioning: {
-            productLogo: {
-                left: '0px',     // Horizontal positioning for detailed review logo
-                top: '-0.25rem'      // Vertical positioning for detailed review logo
-            },
-            productImage: {
-                left: '0px',           // Horizontal positioning for detailed review image
-                top: '0px',            // Vertical positioning for detailed review image
-                objectPosition: 'top left', // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'fill'     // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
+            productLogo: { left: '0px', top: '-0.25rem' },
+            productImage: { left: '0px', top: '0px', objectPosition: 'top center', objectFit: 'fill' }
         },
-        
-        // Product ranking and affiliate data
         rank: 4,
-        rankBadge: "BEST FOR BUSINESS",
+        rankBadge: "RTP CONTROL",
         rating: 4.5,
-        reviewCount: 1967,
-
-        // =============================================
-        // RANK BADGE DISPLAY SETTINGS
-        // =============================================
-        badgeSettings: {
-            showOnProductCard: true,     // ← Show/hide rank badge on product cards (true/false)
-            showOnDetailedReview: true   // ← Show/hide rank badge on detailed review cards (true/false)
-        },
-        
-        // ========== UNIVERSAL TEMPLATE FIELDS ==========
-        // Physical Products (default)
-        price: "£1,899",
-        originalPrice: "£2,199",
-        discount: "14% OFF",
-        
-        // Casino Websites
-        welcomeBonus: "3-Year Premier Support",
-        welcomePackage: "Intel Core i7 + 32GB RAM + 1TB SSD",
-        addedBonus: "MIL-STD-810H Tested",
-        
-        // Sports Betting
-        signupBonus: "£75 Free Bet",
-        oddsBoost: "25% Odds Boost",
-        freeBet: "£15 Risk-Free Bet",
-        
-        // Software/SaaS
-        monthlyPrice: "£29/month",
-        yearlyPrice: "£290/year",
-        trialPeriod: "14-day free trial",
-        
-        affiliateLink: "https://www.lenovo.com/gb/en/p/laptops/thinkpad/thinkpadx1/thinkpad-x1-carbon-gen-13-aura-edition-14-inch-intel/21nscto1wwgb3",
-        ctaText: "Buy Now",
-        
-        // CTA section configuration for detailed reviews
+        reviewCount: 1500,
+        badgeSettings: { showOnProductCard: true, showOnDetailedReview: true },
+        price: "",
+        originalPrice: "",
+        discount: "",
+        welcomeBonus: "Tiered free spins (250–5,000 USDT deposits)",
+        welcomePackage: "RTP/volatility filters in lobby",
+        addedBonus: "On-ramps incl. Apple/Google Pay",
+        affiliateLink: "https://bitcasino.io/",
+        ctaText: "Filter by RTP, Play Smarter",
         cta: {
-            title: "Professional Excellence Awaits!",
-            description: "Get the legendary ThinkPad X1 Carbon for business success!",
-            boxInfo: "The most trusted business laptop with legendary keyboard and durability!",
-            // CTA box display controls
-            display: {
-                showTitle: false,        // Show/hide CTA title
-                showDescription: false,  // Show/hide CTA description  
-                showBoxInfo: false,      // Show/hide additional box info
-                showPricingInfo: true   // Show/hide pricing info section
-            }
+            title: "Play with RTP visibility",
+            description: "See RTP/volatility filters before you play.",
+            boxInfo: "Fast withdrawals; clear limits",
+            display: { showTitle: false, showDescription: false, showBoxInfo: false, showPricingInfo: true }
         },
-        
-        // Features for product cards (short list)
         features: [
-            { text: "Intel Core i7-14700U", icon: "fas fa-microchip" },
-            { text: "32GB LPDDR5 Memory", icon: "fas fa-memory" },
-            { text: "14-inch 2.8K OLED", icon: "fas fa-tv" },
-            { text: "19-Hour Battery Life", icon: "fas fa-battery-full" },
-            { text: "Legendary ThinkPad Keyboard", icon: "fas fa-keyboard" }
+            { text: "RTP & volatility filters", icon: "fas fa-chart-line" },
+            { text: "Fast withdrawals; clear caps", icon: "fas fa-bolt" },
+            { text: "On-ramps (Apple/Google Pay)", icon: "fas fa-credit-card" },
+            { text: "Live-casino depth", icon: "fas fa-chess-board" },
+            { text: "Mobile-first UI", icon: "fas fa-mobile-alt" }
         ],
-        
-        // Detailed review content
         fullReview: {
-            tagline: "The legendary business laptop with unmatched durability and performance",
+            tagline: "Casino that lets you filter by RTP",
             paragraphs: [
-                "The ThinkPad X1 Carbon Gen 13 continues the legendary ThinkPad tradition with exceptional build quality, outstanding keyboard, and reliable Intel Core i7-14700U performance. Our testing confirmed its status as the ultimate business laptop.",
-                "This laptop impressed our team with its legendary keyboard feel, robust construction that passes MIL-STD-810H testing, and excellent 19-hour battery life. The 2.8K OLED display provides crisp visuals for professional work.",
-                "After extensive testing in various business scenarios, the X1 Carbon Gen 13 proved to be the best choice for business professionals who demand reliability, exceptional keyboard experience, and long battery life."
+                "Transparency stands out—RTP and volatility filters are rare in crypto casinos.",
+                "On-ramps simplify fiat-to-crypto; low practical deposit floors help testing.",
+                "Great for data-forward players who want control and speed."
             ]
         },
-        
-        // Perks for product cards and detailed reviews
         perks: [
-            { text: "Legendary ThinkPad Keyboard", icon: "fas fa-keyboard" },
-            { text: "MIL-STD-810H Durability", icon: "fas fa-shield-alt" },
-            { text: "2.8K OLED Display", icon: "fas fa-tv" },
-            { text: "19-Hour Battery Life", icon: "fas fa-battery-full" },
-            { text: "Thunderbolt 4 Ports", icon: "fas fa-bolt" },
-            { text: "TrackPoint Navigation", icon: "fas fa-mouse-pointer" },
-            { text: "Windows Hello IR Camera", icon: "fas fa-camera" },
-            { text: "Premier Support Available", icon: "fas fa-headset" }
+            { text: "Low entry (≈$0.25 equiv)", icon: "fas fa-wallet" },
+            { text: "High-roller FS tiers", icon: "fas fa-gem" },
+            { text: "24/7 help center", icon: "fas fa-headset" },
+            { text: "Rich provider mix", icon: "fas fa-th" },
+            { text: "Esports promos (guides)", icon: "fas fa-gamepad" }
         ],
-        
-        // Technical specifications
         specifications: [
-            { name: "Processor", value: "Intel Core i7-14700U (12-core, up to 5.2GHz)", icon: "fas fa-microchip" },
-            { name: "Memory", value: "32GB LPDDR5-5600, soldered", icon: "fas fa-memory" },
-            { name: "Storage", value: "1TB PCIe 4.0 SSD, user replaceable", icon: "fas fa-hdd" },
-            { name: "Display", value: "14-inch 2.8K OLED, 400 nits, HDR 500", icon: "fas fa-tv" },
-            { name: "Battery", value: "57Wh lithium-polymer, up to 19 hours", icon: "fas fa-battery-full" },
-            { name: "Connectivity", value: "Thunderbolt 4, USB-A, HDMI, Wi-Fi 7, 5G option", icon: "fas fa-wifi" }
+            { name: "License", value: "Curaçao", icon: "fas fa-certificate" },
+            { name: "Cryptos", value: "BTC, ETH, USDT/USDC, more", icon: "fas fa-coins" },
+            { name: "Welcome", value: "FS tiers 250–5,000 USDT", icon: "fas fa-gift" },
+            { name: "Rating", value: "4.5/5 (CoinBettors)", icon: "fas fa-star" },
+            { name: "Focus", value: "RTP transparency + polished UX", icon: "fas fa-eye" }
         ]
     },
     
-    // Product 5 Configuration - #5 Ranked Crypto Casino - Betpanda
+    // Product 5 Configuration - #5 Ranked Crypto Casino - BitStarz
     product5: {
-        name: "ASUS ROG Zephyrus G18",
-        description: "The ROG Zephyrus G18 delivers top-notch gaming performance with AMD Ryzen 9 7950HX and cutting-edge graphics in an 18-inch powerhouse.",
-        productLogo: "./assets/images/laptop_test/ASUS_logo_white.png",
-        productImage: "./assets/images/laptop_test/ASUS_ROG_Zephyrus_G18.jpg",
-        logoScale: {
-            grid: 2.0,
-            list: 1.5,
-            tablet: {
-                grid: 1.5,  // Scale for tablet grid view
-                list: 1.0   // Scale for tablet list view
-            }
-        },
-        
-        // Product image scaling settings for product cards
-        imageScale: {
-            grid: 1.0,       // Scale for product image in grid view
-            list: 1.0        // Scale for product image in list view
-        },
-        
-        // Product image positioning settings for product cards
-        imagePositioning: {
-            grid: {
-                objectPosition: 'center',  // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'cover'         // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
-        },
-        
-        // Logo positioning settings for product cards
-        logoPositioning: {
-            grid: {
-                left: '0px',     // Horizontal positioning for grid view
-                top: '0rem'      // Vertical positioning for grid view
-            },
-            list: {
-                left: '0px',     // Horizontal positioning for list view
-                top: '0rem'      // Vertical positioning for list view
-            }
-        },
-        
-        // Detailed review scaling settings
-        detailedReviewScale: {
-            productImage: 1.0,  // Scale for product image in detailed reviews
-            productLogo: 2.0    // Scale for product logo in detailed reviews
-        },
-        
-        // Detailed review positioning settings
+        name: "BitStarz",
+        description: "Award-winning Bitcoin casino with 4,600+ slots and fast withdrawals. Top-tier safety reputation and clear banking pages.",
+        productLogo: "./assets/images/casino_test/bitstarz_logo.webp",
+        productImage: "./assets/images/casino_test/bitstarz_website.jpg",
+        logoScale: { grid: 2.5, list: 2.0, tablet: { grid: 2.0, list: 1.5 } },
+        imageScale: { grid: 1.0, list: 1.0 },
+        imagePositioning: { grid: { objectPosition: 'center', objectFit: 'cover' } },
+        logoPositioning: { grid: { left: '0px', top: '0rem' }, list: { left: '0px', top: '0rem' } },
+        detailedReviewScale: { productImage: 1.0, productLogo: 2.5 },
         detailedReviewPositioning: {
-            productLogo: {
-                left: '0px',     // Horizontal positioning for detailed review logo
-                top: '-0.25rem'      // Vertical positioning for detailed review logo
-            },
-            productImage: {
-                left: '0px',           // Horizontal positioning for detailed review image
-                top: '0px',            // Vertical positioning for detailed review image
-                objectPosition: 'center', // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'cover'     // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
+            productLogo: { left: '0px', top: '-0.25rem' },
+            productImage: { left: '0px', top: '0px', objectPosition: 'top center', objectFit: 'cover' }
         },
-        
-        // Product ranking and affiliate data
         rank: 5,
-        rankBadge: "BEST GAMING",
+        rankBadge: "SAFETY",
         rating: 4.4,
-        reviewCount: 1654,
-
-        // =============================================
-        // RANK BADGE DISPLAY SETTINGS
-        // =============================================
-        badgeSettings: {
-            showOnProductCard: true,     // ← Show/hide rank badge on product cards (true/false)
-            showOnDetailedReview: true   // ← Show/hide rank badge on detailed review cards (true/false)
-        },
-        
-        // ========== UNIVERSAL TEMPLATE FIELDS ==========
-        // Physical Products (default)
-        price: "£3,299",
-        originalPrice: "£3,799",
-        discount: "13% OFF",
-        
-        // Casino Websites
-        welcomeBonus: "Free ROG Gaming Mouse",
-        welcomePackage: "AMD Ryzen 9 + 32GB RAM + 2TB SSD",
-        addedBonus: "240Hz Gaming Display",
-        
-        // Sports Betting
-        signupBonus: "£40 Free Bet",
-        oddsBoost: "15% Odds Boost",
-        freeBet: "£8 Risk-Free Bet",
-        
-        // Software/SaaS
-        monthlyPrice: "£19/month",
-        yearlyPrice: "£190/year",
-        trialPeriod: "7-day free trial",
-        
-        affiliateLink: "https://uk.store.asus.com/rog-strix-g18-2024-g814-237046335-90nr0id6-m000h0.html",
-        ctaText: "Buy Now",
-        
-        // CTA section configuration for detailed reviews
+        reviewCount: 4000,
+        badgeSettings: { showOnProductCard: true, showOnDetailedReview: true },
+        price: "",
+        originalPrice: "",
+        discount: "",
+        welcomeBonus: "$500 or 5BTC + 180 free spins",
+        welcomePackage: "deposit prizes",
+        addedBonus: "50% Monday reload bonus",
+        affiliateLink: "https://www.bitstarz.com/",
+        ctaText: "Play Safe",
         cta: {
-            title: "Ultimate Gaming Power!",
-            description: "Experience next-level gaming with the ROG Zephyrus G18's incredible performance.",
-            boxInfo: "Free ROG gaming mouse included - Premium gaming setup ready!",
-            // CTA box display controls
-            display: {
-                showTitle: false,        // Show/hide CTA title
-                showDescription: false,  // Show/hide CTA description  
-                showBoxInfo: false,      // Show/hide additional box info
-                showPricingInfo: true   // Show/hide pricing info section
-            }
+            title: "Top safety rating",
+            description: "Fast withdrawals and clear banking info.",
+            boxInfo: "Great slot depth and weekly promos",
+            display: { showTitle: false, showDescription: false, showBoxInfo: false, showPricingInfo: true }
         },
-        
-        // Features for product cards (short list)
         features: [
-            { text: "AMD Ryzen 9 7950HX", icon: "fas fa-microchip" },
-            { text: "32GB DDR5 Memory", icon: "fas fa-memory" },
-            { text: "18-inch 240Hz Display", icon: "fas fa-tv" },
-            { text: "Liquid Metal Cooling", icon: "fas fa-snowflake" },
-            { text: "ROG Nebula HDR Display", icon: "fas fa-eye" }
+            { text: "4,600+ slots + live", icon: "fas fa-dice" },
+            { text: "Seven in-house exclusives", icon: "fas fa-star" },
+            { text: "Quick verification & cashouts", icon: "fas fa-bolt" },
+            { text: "Payment methods visibility", icon: "fas fa-list" },
+            { text: "Mobile-optimized lobby", icon: "fas fa-mobile-alt" }
         ],
-        
-        // Detailed review content
         fullReview: {
-            tagline: "The ultimate gaming powerhouse with ROG excellence and cutting-edge performance",
+            tagline: "Award-winning Bitcoin casino with elite safety marks",
             paragraphs: [
-                "The ASUS ROG Zephyrus G18 stands as the pinnacle of gaming laptops, delivering unprecedented performance with its Intel Core i9-14900HX processor and NVIDIA RTX 4090 graphics. Our extensive testing confirmed this laptop offers the best gaming experience available today.",
-                "What sets the Zephyrus G18 apart is its massive 18-inch ROG Nebula HDR display with 240Hz refresh rate and advanced liquid metal cooling system that maintains peak performance during intense gaming sessions. The premium build quality and ROG ecosystem integration create an unmatched gaming experience.",
-                "After comprehensive testing across the most demanding games and creative applications, the ROG Zephyrus G18 proved to be the ultimate choice for serious gamers and content creators who demand the absolute best performance and display quality available."
+                "BitStarz pairs a huge slot catalog with fast, transparent banking and a 9.8/10 safety index.",
+                "Weekly promo cadence and occasional no-deposit spins keep value flowing.",
+                "A safe first stop if you want top safety signals alongside breadth."
             ]
         },
-        
-        // Perks for product cards and detailed reviews
         perks: [
-            { text: "240Hz Gaming Display", icon: "fas fa-tv" },
-            { text: "Liquid Metal Thermal", icon: "fas fa-snowflake" },
-            { text: "ROG Keystone II", icon: "fas fa-key" },
-            { text: "90Wh Battery", icon: "fas fa-battery-full" },
-            { text: "Dolby Vision HDR", icon: "fas fa-eye" },
-            { text: "Wi-Fi 7 Ready", icon: "fas fa-wifi" },
-            { text: "USB4 Thunderbolt", icon: "fas fa-bolt" },
-            { text: "ROG Armoury Crate", icon: "fas fa-cog" }
+            { text: "Very High Safety Index (9.8)", icon: "fas fa-shield-alt" },
+            { text: "No-deposit FS appear periodically", icon: "fas fa-gift" },
+            { text: "Clear min/max payment tables", icon: "fas fa-file-invoice-dollar" },
+            { text: "Large provider variety", icon: "fas fa-th" },
+            { text: "Strong review footprint", icon: "fas fa-users" }
         ],
-        
-        // Technical specifications
         specifications: [
-            { name: "Processor", value: "AMD Ryzen 9 7950HX (16-core, up to 5.7GHz)", icon: "fas fa-microchip" },
-            { name: "Memory", value: "32GB DDR5-4800, upgradeable to 64GB", icon: "fas fa-memory" },
-            { name: "Storage", value: "2TB PCIe 4.0 SSD, dual M.2 slots", icon: "fas fa-hdd" },
-            { name: "Display", value: "18-inch ROG Nebula HDR, 240Hz, 2560x1600", icon: "fas fa-tv" },
-            { name: "Battery", value: "90Wh lithium-polymer, up to 10 hours", icon: "fas fa-battery-full" },
-            { name: "Graphics", value: "NVIDIA GeForce RTX 4080, 12GB GDDR6X", icon: "fas fa-tv" }
+            { name: "License", value: "Curaçao", icon: "fas fa-certificate" },
+            { name: "Games", value: "4,600+", icon: "fas fa-dice" },
+            { name: "Min Deposit", value: "$20 fiat / 0.0001 BTC", icon: "fas fa-wallet" },
+            { name: "Promos", value: "Reloads + FS; weekly races", icon: "fas fa-bullhorn" },
+            { name: "Trustpilot", value: "~4/5 avg", icon: "fas fa-star" }
         ]
     },
     
     // Product 6 Configuration - #6 Ranked Crypto Casino - LuckyBlock
     product6: {
-        name: "HP Spectre x360 14",
-        description: "The HP Spectre x360 14 combines elegant design with versatile 2-in-1 functionality, featuring Intel Core i7-1365U and premium build quality.",
-        productLogo: "./assets/images/laptop_test/hp_logo.png",
-        productImage: "./assets/images/laptop_test/HP_Spectre_x360_14.jpg",
-        logoScale: {
-            grid: 2.0,
-            list: 1.7,
-            tablet: {
-                grid: 2.0,  // Scale for tablet grid view
-                list: 1.5   // Scale for tablet list view
-            }
-        },
-        
-        // Product image scaling settings for product cards
-        imageScale: {
-            grid: 1.0,       // Scale for product image in grid view
-            list: 1.0        // Scale for product image in list view
-        },
-        
-        // Product image positioning settings for product cards
-        imagePositioning: {
-            grid: {
-                objectPosition: 'top center',  // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'cover'         // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
-        },
-        
-        // Logo positioning settings for product cards
-        logoPositioning: {
-            grid: {
-                left: '0px',     // Horizontal positioning for grid view
-                top: '0rem'      // Vertical positioning for grid view
-            },
-            list: {
-                left: '0px',     // Horizontal positioning for list view
-                top: '0rem'      // Vertical positioning for list view
-            }
-        },
-        
-        // Detailed review scaling settings
-        detailedReviewScale: {
-            productImage: 1.0,  // Scale for product image in detailed reviews
-            productLogo: 2.0    // Scale for product logo in detailed reviews
-        },
-        
-        // Detailed review positioning settings
+        name: "Roobet",
+        description: "Crypto casino with viral brand energy, 4,400+ games, originals, quick withdrawals, and frequent sports tie-ins.",
+        productLogo: "./assets/images/casino_test/roobet_text_logo.png",
+        productImage: "./assets/images/casino_test/roobet_website.webp",
+        logoScale: { grid: 3.0, list: 2.5, tablet: { grid: 2.5, list: 1.0 } },
+        imageScale: { grid: 1.0, list: 1.0 },
+        imagePositioning: { grid: { objectPosition: 'top center', objectFit: 'cover' } },
+        logoPositioning: { grid: { left: '0px', top: '0rem' }, list: { left: '0px', top: '0rem' } },
+        detailedReviewScale: { productImage: 1.0, productLogo: 2.0 },
         detailedReviewPositioning: {
-            productLogo: {
-                left: '0px',     // Horizontal positioning for detailed review logo
-                top: '-0.25rem'      // Vertical positioning for detailed review logo
-            },
-            productImage: {
-                left: '0px',           // Horizontal positioning for detailed review image
-                top: '0px',            // Vertical positioning for detailed review image
-                objectPosition: 'center', // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'cover'     // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
+            productLogo: { left: '0px', top: '-0.5rem' },
+            productImage: { left: '0px', top: '0px', objectPosition: 'top center', objectFit: 'fill' }
         },
-        
-        // Product ranking and affiliate data
         rank: 6,
-        rankBadge: "BEST 2-IN-1",
+        rankBadge: "COMMUNITY",
         rating: 4.3,
-        reviewCount: 1245,
-
-        // =============================================
-        // RANK BADGE DISPLAY SETTINGS
-        // =============================================
-        badgeSettings: {
-            showOnProductCard: false,     // ← Show/hide rank badge on product cards (true/false)
-            showOnDetailedReview: false   // ← Show/hide rank badge on detailed review cards (true/false)
-        },
-        
-        // ========== UNIVERSAL TEMPLATE FIELDS ==========
-        // Physical Products (default)
-        price: "£1,599",
-        originalPrice: "£1,899",
-        discount: "16% OFF",
-        
-        // Casino Websites
-        welcomeBonus: "Free HP Pen Included",
-        welcomePackage: "Intel Core i7 + 32GB RAM + 1TB SSD",
-        addedBonus: "360° Convertible Design",
-        
-        // Sports Betting
-        signupBonus: "£25 Free Bet",
-        oddsBoost: "10% Odds Boost",
-        freeBet: "£5 Risk-Free Bet",
-        
-        // Software/SaaS
-        monthlyPrice: "£9/month",
-        yearlyPrice: "£90/year",
-        trialPeriod: "3-day free trial",
-        
-        affiliateLink: "https://www.hp.com/us-en/shop/mdp/envy---omen/hp-spectre-x360-14-3074457345617526676--1",
-        ctaText: "Buy Now",
-        
-        // CTA section configuration for detailed reviews
+        reviewCount: 2000,
+        badgeSettings: { showOnProductCard: false, showOnDetailedReview: false },
+        price: "",
+        originalPrice: "",
+        discount: "",
+        welcomeBonus: "Weekly Raffle",
+        welcomePackage: "Low mins (~$2) method-dependent",
+        addedBonus: "Mission Uncrossable (Roobet Original)",
+        affiliateLink: "https://roobet.com/",
+        ctaText: "Test The Waters",
         cta: {
-            title: "Affordable Excellence!",
-            description: "Get professional brewing results without breaking the bank.",
-            boxInfo: "Budget-friendly choice - 17% off with 1-year warranty!",
-            // CTA box display controls
-            display: {
-                showTitle: false,        // Show/hide CTA title
-                showDescription: false,  // Show/hide CTA description  
-                showBoxInfo: false,      // Show/hide additional box info
-                showPricingInfo: true   // Show/hide pricing info section
-            }
+            title: "sports-driven promos",
+            description: "Catch sports tie-ins and coupons",
+            boxInfo: "Quick withdrawals; active socials",
+            display: { showTitle: false, showDescription: false, showBoxInfo: false, showPricingInfo: true }
         },
-        
-        // Features for product cards (short list)
         features: [
-            { text: "Intel Core i7-1365U", icon: "fas fa-microchip" },
-            { text: "32GB LPDDR5 Memory", icon: "fas fa-memory" },
-            { text: "13.5-inch OLED Touch", icon: "fas fa-tv" },
-            { text: "360° Convertible Design", icon: "fas fa-sync-alt" },
-            { text: "HP Pen Included", icon: "fas fa-pen" }
+            { text: "Roobet Originals & crash games", icon: "fas fa-bolt" },
+            { text: "Branded sports promos", icon: "fas fa-futbol" },
+            { text: "Fiat + crypto pathways", icon: "fas fa-random" },
+            { text: "Active social presence", icon: "fas fa-users" },
+            { text: "Mobile-first UX", icon: "fas fa-mobile-alt" }
         ],
-        
-        // Detailed review content
         fullReview: {
-            tagline: "The perfect blend of versatility and premium design with convertible excellence",
+            tagline: "Crypto casino with viral brand energy",
             paragraphs: [
-                "The HP Spectre x360 14 represents the pinnacle of 2-in-1 convertible laptops, delivering exceptional versatility with its 360° hinge design and premium Intel Core i7-14700H performance. Our testing confirmed this laptop offers the best convertible experience available.",
-                "What sets the Spectre x360 14 apart is its stunning 2.8K OLED touchscreen that transforms seamlessly from laptop to tablet mode, combined with included HP Pen support and all-day battery life. The premium gem-cut design and durable construction create an elegant yet functional device.",
-                "After comprehensive testing across productivity, creative, and entertainment scenarios, the HP Spectre x360 14 proved to be the ultimate choice for users who need the flexibility of a tablet with the power of a premium laptop."
+                "Roobet blends casino and culture with partnerships and social activity.",
+                "Large catalog and responsive withdrawals; low mins suit cautious testing.",
+                "Trustpilot is mixed vs. top peers—expect standard KYC friction at scale."
             ]
         },
-        
-        // Perks for product cards and detailed reviews
         perks: [
-            { text: "13.5-inch OLED Display", icon: "fas fa-tv" },
-            { text: "360° Convertible Hinge", icon: "fas fa-sync-alt" },
-            { text: "HP Pen Included", icon: "fas fa-pen" },
-            { text: "Thunderbolt 4 Ports", icon: "fas fa-bolt" },
-            { text: "Bang & Olufsen Audio", icon: "fas fa-volume-up" },
-            { text: "Wi-Fi 6E Ready", icon: "fas fa-wifi" },
-            { text: "Windows Hello IR", icon: "fas fa-camera" },
-            { text: "Premium Build Quality", icon: "fas fa-star" }
+            { text: "Low minimums (~$2)", icon: "fas fa-wallet" },
+            { text: "4,400+ games", icon: "fas fa-gamepad" },
+            { text: "Frequent promos", icon: "fas fa-bullhorn" },
+            { text: "Fast withdrawals", icon: "fas fa-bolt" },
+            { text: "Engaged community", icon: "fas fa-users" }
         ],
-        
-        // Technical specifications
         specifications: [
-            { name: "Processor", value: "Intel Core i7-1365U (12-core, up to 5.2GHz)", icon: "fas fa-microchip" },
-            { name: "Memory", value: "32GB LPDDR5-5200, soldered", icon: "fas fa-memory" },
-            { name: "Storage", value: "1TB PCIe 4.0 SSD, user replaceable", icon: "fas fa-hdd" },
-            { name: "Display", value: "13.5-inch OLED Touch, 3000x2000, 400 nits", icon: "fas fa-tv" },
-            { name: "Battery", value: "68Wh lithium-polymer, up to 16 hours", icon: "fas fa-battery-full" },
-            { name: "Connectivity", value: "Thunderbolt 4, USB-A, Wi-Fi 6E, Bluetooth 5.3", icon: "fas fa-wifi" }
+            { name: "License", value: "Curaçao", icon: "fas fa-certificate" },
+            { name: "Games", value: "4,400+", icon: "fas fa-th" },
+            { name: "Min Deposit", value: "~$2 (method-dependent)", icon: "fas fa-dollar-sign" },
+            { name: "Trustpilot", value: "~3.7/5 avg", icon: "fas fa-star" },
+            { name: "Promos", value: "Team tie-ins; coupons", icon: "fas fa-ticket-alt" }
         ]
     },
     
-    // Product 7 Configuration - #7 Ranked Crypto Casino - Bitcasino
+    // Product 7 Configuration - #7 Ranked Crypto Casino - mBit Casino
     product7: {
-        name: "Razer Blade 16",
-        description: "The Razer Blade 16 delivers ultimate gaming performance with Intel Core i9-14900HX and premium build quality in a sleek design.",
-        productLogo: "./assets/images/laptop_test/alienware_logo.png",
-        productImage: "./assets/images/laptop_test/Razer_Blade_16.webp",
-        logoScale: {
-            grid: 1.5,
-            list: 1.5,
-            tablet: {
-                grid: 1.0,  // Scale for tablet grid view
-                list: 1.0   // Scale for tablet list view
-            }
-        },
-        
-        // Product image scaling settings for product cards
-        imageScale: {
-            grid: 1.0,       // Scale for product image in grid view
-            list: 1.0        // Scale for product image in list view
-        },
-        
-        // Product image positioning settings for product cards
-        imagePositioning: {
-            grid: {
-                objectPosition: 'top left',  // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'fill'         // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
-        },
-
-        // Logo positioning settings for product cards
-        logoPositioning: {
-            grid: {
-                left: '0px',     // Horizontal positioning for grid view
-                top: '0rem'      // Vertical positioning for grid view
-            },
-            list: {
-                left: '0px',     // Horizontal positioning for list view
-                top: '0rem'      // Vertical positioning for list view
-            }
-        },
-        
-        // Detailed review scaling settings
-        detailedReviewScale: {
-            productImage: 1.0,  // Scale for product image in detailed reviews
-            productLogo: 2.0    // Scale for product logo in detailed reviews
-        },
-
-        // Detailed review positioning settings
+        name: "mBit Casino",
+        description: "All-crypto casino with 5,000+ games and blazing cashouts—often ~10 minutes. Transparent coin-by-coin min/withdraw tables.",
+        productLogo: "./assets/images/casino_test/mbitcasino_logo.png",
+        productImage: "./assets/images/casino_test/mbitcasino_website.png",
+        logoScale: { grid: 2.1, list: 1.5, tablet: { grid: 1.8, list: 1.5 } },
+        imageScale: { grid: 1.0, list: 1.0 },
+        imagePositioning: { grid: { objectPosition: 'top left', objectFit: 'fill' } },
+        logoPositioning: { grid: { left: '0px', top: '0rem' }, list: { left: '0px', top: '0rem' } },
+        detailedReviewScale: { productImage: 1.0, productLogo: 2.0 },
         detailedReviewPositioning: {
-            productLogo: {
-                left: '0px',     // Horizontal positioning for detailed review logo
-                top: '-0.25rem'      // Vertical positioning for detailed review logo
-            },
-            productImage: {
-                left: '0px',           // Horizontal positioning for detailed review image
-                top: '0px',            // Vertical positioning for detailed review image
-                objectPosition: 'top center', // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'fill'     // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
+            productLogo: { left: '0px', top: '-0.25rem' },
+            productImage: { left: '0px', top: '0px', objectPosition: 'top center', objectFit: 'fill' }
         },
-        
-        // Product ranking and affiliate data
         rank: 7,
-        rankBadge: "BEST GAMING PREMIUM",
-        rating: 4.6,
-        reviewCount: 1876,
-
-        // =============================================
-        // RANK BADGE DISPLAY SETTINGS
-        // =============================================
-        badgeSettings: {
-            showOnProductCard: false,     // ← Show/hide rank badge on product cards (true/false)
-            showOnDetailedReview: false   // ← Show/hide rank badge on detailed review cards (true/false)
-        },
-        
-        // ========== UNIVERSAL TEMPLATE FIELDS ==========
-        // Physical Products (default)
-        price: "£4,299",
-        originalPrice: "£4,999",
-        discount: "14% OFF",
-        
-        // Casino Websites
-        welcomeBonus: "Free Razer DeathAdder V3",
-        welcomePackage: "Intel Core i9 + 32GB RAM + 2TB SSD",
-        addedBonus: "240Hz OLED Display",
-        
-        // Sports Betting
-        signupBonus: "£60 Free Bet",
-        oddsBoost: "20% Odds Boost",
-        freeBet: "£12 Risk-Free Bet",
-        
-        // Software/SaaS
-        monthlyPrice: "£39/month",
-        yearlyPrice: "£390/year",
-        trialPeriod: "21-day free trial",
-        
-        affiliateLink: "https://razer.com/blade-16/",
-        ctaText: "Buy Now",
-        
-        // CTA section configuration for detailed reviews
+        rankBadge: "FAST PAYOUTS",
+        rating: 4.3,
+        reviewCount: 1600,
+        badgeSettings: { showOnProductCard: false, showOnDetailedReview: false },
+        price: "",
+        originalPrice: "",
+        discount: "",
+        welcomeBonus: "Up to 4 BTC + 325 FS (3-part)",
+        welcomePackage: "Crypto-only banking; no house fees",
+        addedBonus: "Discord support",
+        affiliateLink: "https://www.mbitcasino.io/",
+        ctaText: "Join Today!",
         cta: {
-            title: "Gaming Excellence Awaits!",
-            description: "Experience premium gaming with the Razer Blade 16's unmatched performance.",
-            boxInfo: "Free Razer DeathAdder V3 included - Ultimate gaming setup ready!",
-            // CTA box display controls
-            display: {
-                showTitle: false,        // Show/hide CTA title
-                showDescription: false,  // Show/hide CTA description  
-                showBoxInfo: false,      // Show/hide additional box info
-                showPricingInfo: true   // Show/hide pricing info section
-            }
+            title: "All-crypto speed",
+            description: "Transparent coin minimums and quick payouts.",
+            boxInfo: "Fastest overall cashouts we saw",
+            display: { showTitle: false, showDescription: false, showBoxInfo: false, showPricingInfo: true }
         },
-        
-        // Features for product cards (short list)
         features: [
-            { text: "Intel Core i9-14900HX", icon: "fas fa-microchip" },
-            { text: "32GB DDR5 Memory", icon: "fas fa-memory" },
-            { text: "16-inch 240Hz OLED", icon: "fas fa-tv" },
-            { text: "RTX 4090 Graphics", icon: "fas fa-tv" },
-            { text: "Vapor Chamber Cooling", icon: "fas fa-snowflake" }
+            { text: "5,000+ games; 400+ live", icon: "fas fa-dice" },
+            { text: "Transparent coin tables", icon: "fas fa-table" },
+            { text: "Audited RNG (iTech Labs)", icon: "fas fa-certificate" },
+            { text: "Crypto-only focus", icon: "fas fa-coins" },
+            { text: "Mobile-optimized", icon: "fas fa-mobile-alt" }
         ],
-        
-        // Detailed review content
         fullReview: {
-            tagline: "The ultimate premium gaming laptop with uncompromising performance and design",
+            tagline: "All-crypto banking with blazing cashouts",
             paragraphs: [
-                "The Razer Blade 16 represents the pinnacle of premium gaming laptops, combining exceptional Intel Core i9-14900HX performance with NVIDIA RTX 4090 graphics in a sleek, professional design. Our extensive testing confirmed this laptop delivers unmatched gaming performance with premium aesthetics.",
-                "What sets the Razer Blade 16 apart is its stunning 16-inch 240Hz display, advanced vapor chamber cooling system, and premium CNC-machined aluminum construction. The Razer ecosystem integration with Chroma RGB lighting creates a sophisticated gaming experience that rivals desktop setups.",
-                "After comprehensive testing across the most demanding games and professional applications, the Razer Blade 16 proved to be the ultimate choice for users who demand the absolute best in gaming performance without compromising on premium design and build quality."
+                "Among the fastest crypto payout experiences with clear min/withdraw tables.",
+                "Banking focus keeps flows lean; no fiat rails but strong coin coverage.",
+                "Welcome is rich but time-boxed; races and social promos add value."
             ]
         },
-        
-        // Perks for product cards and detailed reviews
         perks: [
-            { text: "240Hz OLED Display", icon: "fas fa-tv" },
-            { text: "RTX 4090 Graphics", icon: "fas fa-tv" },
-            { text: "Vapor Chamber Cooling", icon: "fas fa-snowflake" },
-            { text: "Per-Key RGB Lighting", icon: "fas fa-keyboard" },
-            { text: "THX Spatial Audio", icon: "fas fa-volume-up" },
-            { text: "Thunderbolt 5 Ready", icon: "fas fa-bolt" },
-            { text: "CNC Aluminum Build", icon: "fas fa-shield-alt" },
-            { text: "Razer Synapse", icon: "fas fa-cog" }
+            { text: "No deposit/withdrawal fees (house)", icon: "fas fa-ban" },
+            { text: "Frequent slot races", icon: "fas fa-flag-checkered" },
+            { text: "Large live-dealer mix", icon: "fas fa-chess-board" },
+            { text: "Discord help + email", icon: "fas fa-headset" },
+            { text: "Detailed RG page", icon: "fas fa-user-shield" }
         ],
-        
-        // Technical specifications
         specifications: [
-            { name: "Processor", value: "Intel Core i9-14900HX (24-core, up to 5.8GHz)", icon: "fas fa-microchip" },
-            { name: "Memory", value: "32GB DDR5-5600, upgradeable to 64GB", icon: "fas fa-memory" },
-            { name: "Storage", value: "2TB PCIe 4.0 SSD, dual M.2 slots", icon: "fas fa-hdd" },
-            { name: "Display", value: "16-inch 240Hz OLED, 2560x1600, HDR 400", icon: "fas fa-tv" },
-            { name: "Graphics", value: "NVIDIA GeForce RTX 4090, 16GB GDDR6X", icon: "fas fa-tv" },
-            { name: "Battery", value: "95.2Wh lithium-polymer, up to 8 hours", icon: "fas fa-battery-full" }
+            { name: "License", value: "Curaçao (Antillephone N.V.)", icon: "fas fa-certificate" },
+            { name: "Coins", value: "BTC, ETH, LTC, XRP, DOGE, USDT, BCH", icon: "fas fa-coins" },
+            { name: "Min Deposit", value: "10 USDT (~$10)", icon: "fas fa-wallet" },
+            { name: "Withdrawals", value: "~10 minutes typical", icon: "fas fa-bolt" },
+            { name: "Welcome", value: "Up to 4 BTC + 325 FS", icon: "fas fa-gift" }
         ]
     },
     
     // Product 8 Configuration - #8 Ranked Crypto Casino - Vave
     product8: {
-        name: "Acer Swift Edge 3",
-        description: "The Acer Swift Edge 3 provides excellent value with AMD Ryzen 7 7735U performance and premium features at an affordable price point.",
-        productLogo: "./assets/images/laptop_test/acer_logo.png",
-        productImage: "./assets/images/laptop_test/Acer_Swift_Edge_3.webp",
-        logoScale: {
-            grid: 2.0,
-            list: 2.0,
-            tablet: {
-                grid: 1.8,  // Scale for tablet grid view
-                list: 0.8   // Scale for tablet list view
-            }
-        },
-        
-        // Product image scaling settings for product cards
-        imageScale: {
-            grid: 1.0,       // Scale for product image in grid view
-            list: 1.0        // Scale for product image in list view
-        },
-        
-        // Product image positioning settings for product cards
-        imagePositioning: {
-            grid: {
-                objectPosition: 'top center',  // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'cover'         // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
-        },
-
-        // Logo positioning settings for product cards
-        logoPositioning: {
-            grid: {
-                left: '0px',     // Horizontal positioning for grid view
-                top: '0rem'      // Vertical positioning for grid view
-            },
-            list: {
-                left: '0px',     // Horizontal positioning for list view
-                top: '0rem'      // Vertical positioning for list view
-            }
-        },
-        
-        // Detailed review scaling settings
-        detailedReviewScale: {
-            productImage: 1.0,  // Scale for product image in detailed reviews
-            productLogo: 2.0    // Scale for product logo in detailed reviews
-        },
-
-        // Detailed review positioning settings
+        name: "Sportsbet.io",
+        description: "Top crypto sportsbook with a legit 3,000+ game casino. Sharp odds, high limits, and fast crypto rails.",
+        productLogo: "./assets/images/casino_test/sportsbet.io_logo.png",
+        productImage: "./assets/images/casino_test/sportsbet.io_website.webp",
+        logoScale: { grid: 3.7, list: 3.0, tablet: { grid: 3.2, list: 1.6 } },
+        imageScale: { grid: 1.0, list: 1.0 },
+        imagePositioning: { grid: { objectPosition: 'top left', objectFit: 'cover' } },
+        logoPositioning: { grid: { left: '0px', top: '0rem' }, list: { left: '0px', top: '0rem' } },
+        detailedReviewScale: { productImage: 1.0, productLogo: 2.8 },
         detailedReviewPositioning: {
-            productLogo: {
-                left: '0px',     // Horizontal positioning for detailed review logo
-                top: '-0.25rem'      // Vertical positioning for detailed review logo
-            },
-            productImage: {
-                left: '0px',           // Horizontal positioning for detailed review image
-                top: '0px',            // Vertical positioning for detailed review image
-                objectPosition: 'top center', // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'cover'     // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
+            productLogo: { left: '0px', top: '-0.25rem' },
+            productImage: { left: '0px', top: '0px', objectPosition: 'top left', objectFit: 'cover' }
         },
-        
-        // Product ranking and affiliate data
         rank: 8,
-        rankBadge: "BEST BUDGET",
-        rating: 4.2,
-        reviewCount: 1567,
-
-        // =============================================
-        // RANK BADGE DISPLAY SETTINGS
-        // =============================================
-        badgeSettings: {
-            showOnProductCard: true,     // ← Show/hide rank badge on product cards (true/false)
-            showOnDetailedReview: true   // ← Show/hide rank badge on detailed review cards (true/false)
-        },
-        
-        // ========== UNIVERSAL TEMPLATE FIELDS ==========
-        // Physical Products (default)
-        price: "£899",
-        originalPrice: "£1,099",
-        discount: "18% OFF",
-        
-        // Casino Websites
-        welcomeBonus: "Free Wireless Mouse",
-        welcomePackage: "AMD Ryzen 7 + 16GB RAM + 1TB SSD",
-        addedBonus: "16-inch OLED Display",
-        
-        // Sports Betting
-        signupBonus: "£30 Free Bet",
-        oddsBoost: "12% Odds Boost",
-        freeBet: "£6 Risk-Free Bet",
-        
-        // Software/SaaS
-        monthlyPrice: "£15/month",
-        yearlyPrice: "£150/year",
-        trialPeriod: "5-day free trial",
-        
-        affiliateLink: "https://www.acer.com/gb-en/laptops/swift/swift-3-intel",
-        ctaText: "Buy Now",
-        
-        // CTA section configuration for detailed reviews
+        rankBadge: "SPORTS + CASINO",
+        rating: 4.3,
+        reviewCount: 2300,
+        badgeSettings: { showOnProductCard: true, showOnDetailedReview: true },
+        price: "",
+        originalPrice: "",
+        discount: "",
+        welcomeBonus: "50% cashback 3 days a week",
+        welcomePackage: "100% bonus up to 300USDT",
+        addedBonus: "Daily Bet Boosts",
+        affiliateLink: "https://sportsbet.io/sports",
+        ctaText: "Bet The Match, Hit The Casino",
         cta: {
-            title: "Exceptional Value Choice!",
-            description: "Get premium laptop features at an unbeatable price with the Swift Edge 3.",
-            boxInfo: "Best budget pick - Free wireless mouse included!",
-            // CTA box display controls
-            display: {
-                showTitle: false,        // Show/hide CTA title
-                showDescription: false,  // Show/hide CTA description  
-                showBoxInfo: false,      // Show/hide additional box info
-                showPricingInfo: true   // Show/hide pricing info section
-            }
+            title: "Elite odds + full casino",
+            description: "One account for sports and live tables.",
+            boxInfo: "Safety Index 8.7; broad coin support",
+            display: { showTitle: false, showDescription: false, showBoxInfo: false, showPricingInfo: true }
         },
-        
-        // Features for product cards (short list)
         features: [
-            { text: "AMD Ryzen 7 7735U", icon: "fas fa-microchip" },
-            { text: "16GB LPDDR5 Memory", icon: "fas fa-memory" },
-            { text: "16-inch OLED Display", icon: "fas fa-tv" },
-            { text: "1TB PCIe SSD", icon: "fas fa-hdd" },
-            { text: "All-Day Battery Life", icon: "fas fa-battery-full" }
+            { text: "Odds boosts & in-play depth", icon: "fas fa-percentage" },
+            { text: "Full live-dealer lineup", icon: "fas fa-chess-board" },
+            { text: "Instant deposits & fast withdrawals", icon: "fas fa-bolt" },
+            { text: "No extra crypto payment fees", icon: "fas fa-ban" },
+            { text: "High bet limits", icon: "fas fa-trophy" }
         ],
-        
-        // Detailed review content
         fullReview: {
-            tagline: "The exceptional budget laptop that delivers premium features without the premium price",
+            tagline: "Elite odds meets full casino",
             paragraphs: [
-                "The Acer Swift Edge 3 stands out as the best budget laptop available, delivering exceptional value with its 16-inch OLED display and powerful AMD Ryzen 7 7735U processor. Our extensive testing confirmed this laptop offers premium features at an unbeatable price point.",
-                "What sets the Swift Edge 3 apart is its stunning 16-inch OLED display that rivals laptops costing twice as much, combined with excellent build quality and all-day battery life. The lightweight design and comprehensive port selection make it perfect for students and professionals on a budget.",
-                "After thorough testing across productivity, entertainment, and everyday computing tasks, the Acer Swift Edge 3 proved to be the ultimate choice for users who want premium laptop features without the premium price tag."
+                "Sports-first with a strong casino arm—ideal for split focus players.",
+                "Crypto rails are quick; safety rating and coin coverage reassure.",
+                "Promo cadence favors sports; casino has depth where it counts."
             ]
         },
-        
-        // Perks for product cards and detailed reviews
         perks: [
-            { text: "16-inch OLED Display", icon: "fas fa-tv" },
-            { text: "AMD Ryzen 7 Performance", icon: "fas fa-microchip" },
-            { text: "All-Day Battery Life", icon: "fas fa-battery-full" },
-            { text: "Lightweight Design", icon: "fas fa-feather-alt" },
-            { text: "Fast SSD Storage", icon: "fas fa-hdd" },
-            { text: "Wi-Fi 6E Ready", icon: "fas fa-wifi" },
-            { text: "USB-C Charging", icon: "fas fa-plug" },
-            { text: "Excellent Value", icon: "fas fa-dollar-sign" }
+            { text: "Trusted sportsbook reputation", icon: "fas fa-award" },
+            { text: "Broad coin support", icon: "fas fa-coins" },
+            { text: "Live-betting speed", icon: "fas fa-running" },
+            { text: "High limits for VIPs", icon: "fas fa-crown" },
+            { text: "Solid safety index (8.7)", icon: "fas fa-shield-alt" }
         ],
-        
-        // Technical specifications
         specifications: [
-            { name: "Processor", value: "AMD Ryzen 7 7735U (8-core, up to 4.75GHz)", icon: "fas fa-microchip" },
-            { name: "Memory", value: "16GB LPDDR5-6400, soldered", icon: "fas fa-memory" },
-            { name: "Storage", value: "1TB PCIe 4.0 SSD, user replaceable", icon: "fas fa-hdd" },
-            { name: "Display", value: "16-inch OLED, 3200x2000, 400 nits", icon: "fas fa-tv" },
-            { name: "Battery", value: "76Wh lithium-polymer, up to 12 hours", icon: "fas fa-battery-full" },
-            { name: "Connectivity", value: "USB-C, USB-A, HDMI, Wi-Fi 6E, Bluetooth 5.2", icon: "fas fa-wifi" }
+            { name: "License", value: "Curaçao", icon: "fas fa-certificate" },
+            { name: "Casino Games", value: "3,000+", icon: "fas fa-dice" },
+            { name: "Max Bet (illustrative)", value: "Football up to ~$2M", icon: "fas fa-futbol" },
+            { name: "Safety Index", value: "8.7 (Casino.Guru)", icon: "fas fa-shield-alt" },
+            { name: "Coins", value: "BTC, ETH, USDT, XRP, ADA, DOGE, BNB, USDC, MATIC, TON, more", icon: "fas fa-coins" }
         ]
     },
     
     // Product 9 Configuration - #9 Ranked Crypto Casino - Shuffle
     product9: {
-        name: "Samsung Galaxy Book 4 Ultra",
-        description: "The Galaxy Book 4 Ultra integrates seamlessly with Samsung ecosystem while delivering powerful Intel Core i9-14900HX performance.",
-        productLogo: "./assets/images/laptop_test/samsung_logo.png",
-        productImage: "./assets/images/laptop_test/Samsung_Galaxy_Book_4_Ultra.webp",
-        logoScale: {
-            grid: 2.8,
-            list: 2.5,
-            tablet: {
-                grid: 2.3,  // Scale for tablet grid view
-                list: 2.0   // Scale for tablet list view
-            }
-        },
-        
-        // Product image scaling settings for product cards
-        imageScale: {
-            grid: 1.0,       // Scale for product image in grid view
-            list: 1.0        // Scale for product image in list view
-        },
-        
-        // Product image positioning settings for product cards
-        imagePositioning: {
-            grid: {
-                objectPosition: 'center',  // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'cover'         // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
-        },
-
-        // Logo positioning settings for product cards
-        logoPositioning: {
-            grid: {
-                left: '0px',     // Horizontal positioning for grid view
-                top: '0rem'      // Vertical positioning for grid view
-            },
-            list: {
-                left: '0px',     // Horizontal positioning for list view
-                top: '0rem'      // Vertical positioning for list view
-            }
-        },
-        
-        // Detailed review scaling settings
-        detailedReviewScale: {
-            productImage: 1.0,  // Scale for product image in detailed reviews
-            productLogo: 2.5    // Scale for product logo in detailed reviews
-        },
-
-        // Detailed review positioning settings
+        name: "Gamdom",
+        description: "Micro-deposits and deep live-casino coverage. Friendly to penny-stake players with modern UI and fast loads.",
+        productLogo: "./assets/images/casino_test/gamdom_text_logo_white.svg",
+        productImage: "./assets/images/casino_test/gamdom_website.webp",
+        logoScale: { grid: 3.0, list: 2.5, tablet: { grid: 2.5, list: 1.2 } },
+        imageScale: { grid: 1.0, list: 1.0 },
+        imagePositioning: { grid: { objectPosition: 'top left', objectFit: 'cover' } },
+        logoPositioning: { grid: { left: '0px', top: '0rem' }, list: { left: '0px', top: '0rem' } },
+        detailedReviewScale: { productImage: 1.0, productLogo: 2.5 },
         detailedReviewPositioning: {
-            productLogo: {
-                left: '0px',     // Horizontal positioning for detailed review logo
-                top: '-0.25rem'      // Vertical positioning for detailed review logo
-            },
-            productImage: {
-                left: '0px',           // Horizontal positioning for detailed review image
-                top: '0px',            // Vertical positioning for detailed review image
-                objectPosition: 'top left', // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'fill'     // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
+            productLogo: { left: '0px', top: '-0.25rem' },
+            productImage: { left: '0px', top: '0px', objectPosition: 'top left', objectFit: 'fill' }
         },
-        
-        // Product ranking and affiliate data
         rank: 9,
-        rankBadge: "BEST ECOSYSTEM",
-        rating: 4.4,
-        reviewCount: 1834,
-
-        // =============================================
-        // RANK BADGE DISPLAY SETTINGS
-        // =============================================
-        badgeSettings: {
-            showOnProductCard: false,     // ← Show/hide rank badge on product cards (true/false)
-            showOnDetailedReview: false   // ← Show/hide rank badge on detailed review cards (true/false)
-        },
-        
-        // ========== UNIVERSAL TEMPLATE FIELDS ==========
-        // Physical Products (default)
-        price: "£2,199",
-        originalPrice: "£2,599",
-        discount: "15% OFF",
-        
-        // Casino Websites
-        welcomeBonus: "Free Galaxy Buds Pro",
-        welcomePackage: "Intel Core i9 + 32GB RAM + 1TB SSD",
-        addedBonus: "Samsung Ecosystem Integration",
-        
-        // Sports Betting
-        signupBonus: "£20 Free Bet",
-        oddsBoost: "8% Odds Boost",
-        freeBet: "£4 Risk-Free Bet",
-        
-        // Software/SaaS
-        monthlyPrice: "£8/month",
-        yearlyPrice: "£80/year",
-        trialPeriod: "2-day free trial",
-        
-        affiliateLink: "https://www.samsung.com/us/computing/galaxy-books/galaxy-book4-series/buy/galaxy-book4-ultra-16-intelcore-ultra-7-1tb-moonstone-gray-np960xgl-xg2us/",
-        ctaText: "Buy Now",
-        
-        // CTA section configuration for detailed reviews
+        rankBadge: "MICRO-STAKE",
+        rating: 4.2,
+        reviewCount: 1400,
+        badgeSettings: { showOnProductCard: false, showOnDetailedReview: false },
+        price: "",
+        originalPrice: "",
+        discount: "",
+        welcomeBonus: "15% boost for first week",
+        welcomePackage: "Daily, Weekly, and Monthly Bonuses",
+        addedBonus: "Friday Free Spins",
+        affiliateLink: "https://gamdom.com/",
+        ctaText: "Play Live Now",
         cta: {
-            title: "Samsung Ecosystem Power!",
-            description: "Experience seamless integration with your Samsung devices and ecosystem.",
-            boxInfo: "Free Galaxy Buds Pro included - Complete Samsung setup!",
-            // CTA box display controls
-            display: {
-                showTitle: false,        // Show/hide CTA title
-                showDescription: false,  // Show/hide CTA description  
-                showBoxInfo: false,      // Show/hide additional box info
-                showPricingInfo: true   // Show/hide pricing info section
-            }
+            title: "Micro-friendly casino",
+            description: "Live tables and penny slots, fast loads.",
+            boxInfo: "Good variety across providers",
+            display: { showTitle: false, showDescription: false, showBoxInfo: false, showPricingInfo: true }
         },
-        
-        // Features for product cards (short list)
         features: [
-            { text: "Intel Core i9-14900HX", icon: "fas fa-microchip" },
-            { text: "32GB LPDDR5 Memory", icon: "fas fa-memory" },
-            { text: "16-inch Dynamic AMOLED", icon: "fas fa-tv" },
-            { text: "Samsung Ecosystem Sync", icon: "fas fa-sync-alt" },
-            { text: "S Pen Pro Included", icon: "fas fa-pen" }
+            { text: "Micro-deposit support", icon: "fas fa-wallet" },
+            { text: "Evolution/Pragmatic live depth", icon: "fas fa-chess-board" },
+            { text: "Multi-language lobbies", icon: "fas fa-globe" },
+            { text: "Crash/dice variants", icon: "fas fa-bolt" },
+            { text: "Mobile-ready app", icon: "fas fa-mobile-alt" }
         ],
-        
-        // Detailed review content
         fullReview: {
-            tagline: "The ultimate Samsung ecosystem laptop with seamless integration and premium performance",
+            tagline: "Low entry, high variety",
             paragraphs: [
-                "The Samsung Galaxy Book 4 Ultra represents the pinnacle of Samsung's laptop engineering, delivering exceptional Intel Core i9-14900HX performance with seamless integration across the Samsung ecosystem. Our extensive testing confirmed this laptop offers the best ecosystem experience available.",
-                "What sets the Galaxy Book 4 Ultra apart is its stunning 16-inch Dynamic AMOLED display and seamless integration with Samsung devices including Galaxy phones, tablets, and earbuds. The included S Pen Pro and ecosystem features create a unified, productive workflow.",
-                "After comprehensive testing across productivity, creative, and ecosystem integration scenarios, the Samsung Galaxy Book 4 Ultra proved to be the ultimate choice for users invested in the Samsung ecosystem who demand premium performance and seamless device connectivity."
+                "Gamdom is ideal for first-time crypto testers given tiny deposit floors.",
+                "Live-casino depth and penny-stake options reduce variance while learning.",
+                "Reputation is mid-pack vs. safety leaders, but the micro angle is compelling."
             ]
         },
-        
-        // Perks for product cards and detailed reviews
         perks: [
-            { text: "Dynamic AMOLED Display", icon: "fas fa-tv" },
-            { text: "Samsung Ecosystem Sync", icon: "fas fa-sync-alt" },
-            { text: "S Pen Pro Included", icon: "fas fa-pen" },
-            { text: "Intel Core i9 Power", icon: "fas fa-microchip" },
-            { text: "Galaxy Buds Pro", icon: "fas fa-headphones" },
-            { text: "Thunderbolt 4 Ports", icon: "fas fa-bolt" },
-            { text: "Wi-Fi 7 Ready", icon: "fas fa-wifi" },
-            { text: "Premium Build Quality", icon: "fas fa-star" }
+            { text: "Frequent table availability", icon: "fas fa-table" },
+            { text: "Broad provider mix", icon: "fas fa-th" },
+            { text: "VIP perks for high rollers", icon: "fas fa-gem" },
+            { text: "Penny-slot friendly", icon: "fas fa-coins" },
+            { text: "Simple onboarding", icon: "fas fa-sign-in-alt" }
         ],
-        
-        // Technical specifications
         specifications: [
-            { name: "Processor", value: "Intel Core i9-14900HX (24-core, up to 5.8GHz)", icon: "fas fa-microchip" },
-            { name: "Memory", value: "32GB LPDDR5-7500, soldered", icon: "fas fa-memory" },
-            { name: "Storage", value: "1TB PCIe 4.0 SSD, user replaceable", icon: "fas fa-hdd" },
-            { name: "Display", value: "16-inch Dynamic AMOLED, 2880x1800, 120Hz", icon: "fas fa-tv" },
-            { name: "Battery", value: "76Wh lithium-polymer, up to 14 hours", icon: "fas fa-battery-full" },
-            { name: "Connectivity", value: "Thunderbolt 4, USB-C, HDMI, Wi-Fi 7, 5G", icon: "fas fa-wifi" }
+            { name: "License", value: "Curaçao (Smein Hosting N.V.)", icon: "fas fa-certificate" },
+            { name: "Min Deposit", value: "1e-6 BTC; SOL mins vary", icon: "fas fa-dollar-sign" },
+            { name: "Live Tables", value: "Extensive Evolution/Pragmatic", icon: "fas fa-chess-board" },
+            { name: "Established", value: "2016", icon: "fas fa-calendar" },
+            { name: "Editorial", value: "Strong 2025 reviews (Webopedia/CryptoCasinos)", icon: "fas fa-newspaper" }
         ]
     },
     
-    // Product 10 Configuration - #10 Ranked Crypto Casino - Rainbet
+    // Product 10 Configuration - #10 Ranked Crypto Casino - Rollbit
     product10: {
-        name: "LG Gram 17",
-        description: "The LG Gram 17 offers exceptional portability despite its large 17-inch display, with Intel Core i7-1360P and all-day battery life.",
-        productLogo: "./assets/images/laptop_test/lg_logo.png",
-        productImage: "./assets/images/laptop_test/LG_Gram_17.jpg",
-        logoScale: {
-            grid: 2.0,
-            list: 2.0,
-            tablet: {
-                grid: 2.5,  // Scale for tablet grid view
-                list: 1.0   // Scale for tablet list view
-            }
-        },
-        
-        // Product image scaling settings for product cards
-        imageScale: {
-            grid: 1.0,       // Scale for product image in grid view
-            list: 1.0        // Scale for product image in list view
-        },
-        
-        // Product image positioning settings for product cards
-        imagePositioning: {
-            grid: {
-                objectPosition: 'top center',  // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'cover'         // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
-        },
-
-        // Logo positioning settings for product cards
-        logoPositioning: {
-            grid: {
-                left: '0px',     // Horizontal positioning for grid view
-                top: '0rem'      // Vertical positioning for grid view
-            },
-            list: {
-                left: '0px',     // Horizontal positioning for list view
-                top: '0rem'      // Vertical positioning for list view
-            }
-        },
-        
-        // Detailed review scaling settings
-        detailedReviewScale: {
-            productImage: 1.0,  // Scale for product image in detailed reviews
-            productLogo: 2.0    // Scale for product logo in detailed reviews
-        },
-
-        // Detailed review positioning settings
+        name: "Rollbit",
+        description: "Casino meets crypto trading—NFTs, token markets, and futures alongside slots/live. Innovative but higher complexity.",
+        productLogo: "./assets/images/casino_test/rollbit_logo_white.png",
+        productImage: "./assets/images/casino_test/rollbit_website.png",
+        logoScale: { grid: 4.5, list: 2.6, tablet: { grid: 3.5, list: 2.5 } },
+        imageScale: { grid: 1.0, list: 1.0 },
+        imagePositioning: { grid: { objectPosition: 'top center', objectFit: 'cover' } },
+        logoPositioning: { grid: { left: '0px', top: '0rem' }, list: { left: '0px', top: '0rem' } },
+        detailedReviewScale: { productImage: 1.0, productLogo: 4.0 },
         detailedReviewPositioning: {
-            productLogo: {
-                left: '0px',     // Horizontal positioning for detailed review logo
-                top: '-0.25rem'      // Vertical positioning for detailed review logo
-            },
-            productImage: {
-                left: '0px',           // Horizontal positioning for detailed review image
-                top: '0px',            // Vertical positioning for detailed review image
-                objectPosition: 'top left', // Options: 'top left', 'top center', 'top right', 'center left', 'center', 'center right', 'bottom left', 'bottom center', 'bottom right'
-                objectFit: 'fill'     // Options: 'cover', 'contain', 'fill', 'scale-down', 'none'
-            }
+            productLogo: { left: '0px', top: '-0.25rem' },
+            productImage: { left: '0px', top: '0px', objectPosition: 'top left', objectFit: 'fill' }
         },
-        
-        // Product ranking and affiliate data
         rank: 10,
-        rankBadge: "BEST PORTABLE",
-        rating: 4.2,
-        reviewCount: 1456,
-
-        // =============================================
-        // RANK BADGE DISPLAY SETTINGS
-        // =============================================
-        badgeSettings: {
-            showOnProductCard: true,     // ← Show/hide rank badge on product cards (true/false)
-            showOnDetailedReview: true   // ← Show/hide rank badge on detailed review cards (true/false)
-        },
-        
-        // ========== UNIVERSAL TEMPLATE FIELDS ==========
-        // Physical Products (default)
-        price: "£1,299",
-        originalPrice: "£1,499",
-        discount: "13% OFF",
-        
-        // Casino Websites
-        welcomeBonus: "Free LG Wireless Mouse",
-        welcomePackage: "Intel Core i7 + 16GB RAM + 512GB SSD",
-        addedBonus: "Ultra-Light 2.98 lbs Design",
-        
-        // Sports Betting
-        signupBonus: "£15 Free Bet",
-        oddsBoost: "5% Odds Boost",
-        freeBet: "£3 Risk-Free Bet",
-        
-        // Software/SaaS
-        monthlyPrice: "£5/month",
-        yearlyPrice: "£50/year",
-        trialPeriod: "1-day free trial",
-        
-        affiliateLink: "https://www.lg.com/uk/laptops/gram/17z90t-g-ad88a1/?srsltid=AfmBOooNBTLH4gfl7hR8cPdurSZC3VO5HyeVaGJEtpIlGF-JioAeno-O",
-        ctaText: "Buy Now",
-        
-        // CTA section configuration for detailed reviews
+        rankBadge: "INNOVATION",
+        rating: 4.1,
+        reviewCount: 1200,
+        badgeSettings: { showOnProductCard: true, showOnDetailedReview: true },
+        price: "",
+        originalPrice: "",
+        discount: "",
+        welcomeBonus: "$25.000 Daily Race",
+        welcomePackage: "Daily, Weekly, and Monthly Rakeback",
+        addedBonus: "Daily Prizes through Discord",
+        affiliateLink: "https://rollbit.com/",
+        ctaText: "Roll The Dice",
         cta: {
-            title: "Ultra-Portable Powerhouse!",
-            description: "Experience the perfect balance of large screen and lightweight design with the LG Gram 17.",
-            boxInfo: "Free wireless mouse included - Ultra-portable at just 2.98 lbs!",
-            // CTA box display controls
-            display: {
-                showTitle: false,        // Show/hide CTA title
-                showDescription: false,  // Show/hide CTA description  
-                showBoxInfo: false,      // Show/hide additional box info
-                showPricingInfo: true   // Show/hide pricing info section
-            }
+            title: "Hybrid casino",
+            description: "Games + DeFi/trading in one account.",
+            boxInfo: "Best for power users comfortable with risk",
+            display: { showTitle: false, showDescription: false, showBoxInfo: false, showPricingInfo: true }
         },
-        
-        // Features for product cards (short list)
         features: [
-            { text: "Intel Core i7-1360P", icon: "fas fa-microchip" },
-            { text: "16GB LPDDR5 Memory", icon: "fas fa-memory" },
-            { text: "17-inch WQXGA Display", icon: "fas fa-tv" },
-            { text: "Ultra-Light 2.98 lbs", icon: "fas fa-feather-alt" },
-            { text: "22-Hour Battery Life", icon: "fas fa-battery-full" }
+            { text: "Casino + futures dashboards", icon: "fas fa-chart-line" },
+            { text: "NFT integration", icon: "fas fa-cubes" },
+            { text: "Provably-fair titles", icon: "fas fa-check" },
+            { text: "Active T&C monitoring", icon: "fas fa-file-alt" },
+            { text: "Mobile-friendly UI", icon: "fas fa-mobile-alt" }
         ],
-        
-        // Detailed review content
         fullReview: {
-            tagline: "The ultimate ultra-portable powerhouse with exceptional battery life and lightweight design",
+            tagline: "Casino meets crypto trading",
             paragraphs: [
-                "The LG Gram 17 stands as the ultimate ultra-portable laptop, delivering exceptional Intel Core i7-1360P performance in an incredibly lightweight 2.98-pound design. Our extensive testing confirmed this laptop offers the best combination of large display and portability available.",
-                "What sets the LG Gram 17 apart is its remarkable 17-inch WQXGA display packed into an ultra-lightweight chassis with industry-leading 22-hour battery life. The military-grade durability testing ensures reliability despite its featherweight construction.",
-                "After comprehensive testing across mobility, productivity, and endurance scenarios, the LG Gram 17 proved to be the ultimate choice for users who need a large display laptop without sacrificing portability or battery life."
+                "Rollbit is unique for users who want both gaming and trading tools in one place.",
+                "Innovation velocity is high—expect frequent updates and new utilities.",
+                "Complexity adds risk; segment bankroll if using trading modules."
             ]
         },
-        
-        // Perks for product cards and detailed reviews
         perks: [
-            { text: "Ultra-Light 2.98 lbs", icon: "fas fa-feather-alt" },
-            { text: "17-inch Large Display", icon: "fas fa-tv" },
-            { text: "22-Hour Battery Life", icon: "fas fa-battery-full" },
-            { text: "Thunderbolt 4 Ready", icon: "fas fa-bolt" },
-            { text: "Military-Grade Durability", icon: "fas fa-shield-alt" },
-            { text: "Backlit Keyboard", icon: "fas fa-keyboard" },
-            { text: "Wi-Fi 6E Support", icon: "fas fa-wifi" },
-            { text: "Exceptional Portability", icon: "fas fa-suitcase" }
+            { text: "One wallet for play & trading", icon: "fas fa-wallet" },
+            { text: "Instant crypto payouts (house-side)", icon: "fas fa-bolt" },
+            { text: "Large catalog incl. live", icon: "fas fa-dice" },
+            { text: "Community events", icon: "fas fa-users" },
+            { text: "High-velocity changes", icon: "fas fa-rocket" }
         ],
-        
-        // Technical specifications
         specifications: [
-            { name: "Processor", value: "Intel Core i7-1360P (12-core, up to 5.0GHz)", icon: "fas fa-microchip" },
-            { name: "Memory", value: "16GB LPDDR5-5200, soldered", icon: "fas fa-memory" },
-            { name: "Storage", value: "512GB PCIe 4.0 SSD, upgradeable to 2TB", icon: "fas fa-hdd" },
-            { name: "Display", value: "17-inch WQXGA IPS, 2560x1600, anti-glare", icon: "fas fa-tv" },
-            { name: "Battery", value: "80Wh lithium-polymer, up to 22 hours", icon: "fas fa-battery-full" },
-            { name: "Weight", value: "Ultra-light 2.98 lbs (1.35kg) design", icon: "fas fa-feather-alt" }
+            { name: "License", value: "Curaçao", icon: "fas fa-certificate" },
+            { name: "Safety Index", value: "Active review (Casino.Guru)", icon: "fas fa-search" },
+            { name: "Product", value: "Casino, NFTs, token trading", icon: "fas fa-layer-group" },
+            { name: "Payments", value: "Crypto deposits/withdrawals", icon: "fas fa-coins" },
+            { name: "Focus", value: "Innovation + hybrid features", icon: "fas fa-lightbulb" }
         ]
     }
 };
@@ -1948,25 +975,25 @@ const PRODUCTS_CONFIG = {
 const SECTION_TITLES = {
     // Section titles and icons (easily customizable for your niche) - FOR DETAILED REVIEW CARDS and comparison section titles
     perks: {
-        title: 'Key Features', // ← CHANGEABLE: Title when showing perks in product cards
-        icon: 'fas fa-truck',   // ← CHANGEABLE: Icon for perks in detailed review cards
-        color: '#f472b6'        // ← CHANGEABLE: Color for perks icons in detailed review cards
+        title: 'Key Perks & Benefits', // ← Title when showing perks in product cards
+        icon: 'fas fa-star',   // ← Icon for perks in detailed review cards
+        color: '#f59e0b'        // ← Color for perks icons in detailed review cards
     },
     specs: {
-        title: 'Technical Specifications', // ← CHANGEABLE: Title when showing specs in product cards
-        icon: 'fas fa-cogs',    // ← CHANGEABLE: Icon for specs in detailed review cards
-        color: '#06b6d4'        // ← CHANGEABLE: Color for specs icons in detailed review cards
+        title: 'Platform Specifications', // ← Title when showing specs in product cards
+        icon: 'fas fa-cogs',    // ← Icon for specs in detailed review cards
+        color: '#06b6d4'        // ← Color for specs icons in detailed review cards
     },
     features: {
-        title: 'Bonus Features', // ← CHANGEABLE: Title when showing features in product cards
-        icon: 'fas fa-list',    // ← CHANGEABLE: Icon for features in detailed review cards
-        color: '#10b981'        // ← CHANGEABLE: Color for features icons in detailed review cards
+        title: 'Key Features', // ← Title when showing features in product cards
+        icon: 'fas fa-list',    // ← Icon for features in detailed review cards
+        color: '#10b981'        // ← Color for features icons in detailed review cards
     },
     reviews: {
         title: 'Detailed Reviews',
         icon: 'fas fa-star'
     },
-    comparison: 'Product Comparison',                  // ← Gets overridden by the comparison section Below
+    comparison: 'Casino Comparison',                  // ← Gets overridden by the comparison section Below
     
     // Helper function to get section info with backward compatibility
     getSection: function(sectionName) {
@@ -1991,7 +1018,7 @@ const SECTION_TITLES = {
     
     // Product card display options
     productCards: {
-        displaySection: 'features'                        // ← 'perks', 'specs', or 'features'
+        displaySection: 'perks'                        // ← 'perks', 'specs', or 'features'
     },
     
     // Sort options configuration
@@ -2027,7 +1054,7 @@ const SECTION_TITLES = {
         subtitle: 'Our top recommendation',                 // ← Subtitle
         ctaText: 'Get Started',                            // ← Call-to-action button text
         featureCount: 5,                                   // ← CONFIGURABLE: Number of features/specs/perks to show (3, 4, 5, 7, etc.)
-        displaySection: 'features',                          // ← 'perks', 'features', or 'specs' to show in editor's choice
+        displaySection: 'perks',                          // ← 'perks', 'features', or 'specs' to show in editor's choice
     },
     
     // Editor's Pick Cards configuration
@@ -2035,40 +1062,40 @@ const SECTION_TITLES = {
         title: 'Editor\'s Picks',                          // ← Title for editor's picks section
         subtitle: 'Handpicked recommendations',            // ← Subtitle 
         featureCount: 5,                                   // ← CONFIGURABLE: Number of features/specs/perks to show in each pick card (3, 4, 5, 7, etc.)
-        displaySection: 'features',                          // ← 'perks', 'features', or 'specs' to show in pick cards
+        displaySection: 'perks',                          // ← 'perks', 'features', or 'specs' to show in pick cards
     },
 
     // Comparison section configuration
     comparisonSection: {
-        title: 'Laptop Comparison',                       // ← Title for comparison section
-        subtitle: 'Select 2-3 laptops to compare their features and specifications side by side', // ← Subtitle
-        placeholderTitle: 'Select products to compare',   // ← Placeholder title when no products selected
-        placeholderDescription: 'Choose 2-3 products from the dropdowns above to see a detailed comparison', // ← Placeholder description
+        title: 'Casino Comparison',                       // ← Title for comparison section
+        subtitle: 'Select 2-3 casinos to compare their features and specifications side by side', // ← Subtitle
+        placeholderTitle: 'Select casinos to compare',   // ← Placeholder title when no casinos selected
+        placeholderDescription: 'Choose 2-3 casinos from the dropdowns above to see a detailed comparison', // ← Placeholder description
         resultsTitle: 'Comparison Results',               // ← Title shown above comparison results
-        resultsSubtitle: 'Comparing {count} products',    // ← Subtitle for results (use {count} for product count)
-        featureCount: 5,                                  // ← CONFIGURABLE: Max features/specs/perks to show per product in comparison (5, 7, 10, etc.)
+        resultsSubtitle: 'Comparing {count} casinos',    // ← Subtitle for results (use {count} for casino count)
+        featureCount: 5,                                  // ← CONFIGURABLE: Max features/specs/perks to show per casino in comparison (5, 7, 10, etc.)
         
         // Dropdown configuration
         dropdownLabels: {
-            product1: 'Product 1:',                       // ← Label for first dropdown
-            product2: 'Product 2:',                       // ← Label for second dropdown
-            product3: 'Product 3 (Optional):'            // ← Label for third dropdown
+            product1: 'Casino 1:',                       // ← Label for first dropdown
+            product2: 'Casino 2:',                       // ← Label for second dropdown
+            product3: 'Casino 3 (Optional):'            // ← Label for third dropdown
         },
-        dropdownPlaceholder: 'Select a product...',      // ← Placeholder text in dropdown options
+        dropdownPlaceholder: 'Select a casino...',      // ← Placeholder text in dropdown options
         
         // Comparison table header icons and colors (separate from detailed review cards)
         sectionTitles: { //titles for comparison chosen in const SECTION_TITLES = { up above in the detailed review titles part
             perks: {
                 icon: 'fas fa-star',                      // ← CHANGEABLE: Icon for perks section in comparison table (CHANGED FROM BOLT TO STAR)
-                color: '#fbbf24'                          // ← CHANGEABLE: Color for perks icons in comparison table
+                color: '#f59e0b'                          // ← CHANGEABLE: Color for perks icons in comparison table
             },
             features: {
-                icon: 'fas fa-heart',                     // ← CHANGEABLE: Icon for features section in comparison table (CHANGED FROM GIFT TO HEART)
-                color: '#a855f7'                          // ← CHANGEABLE: Color for features icons in comparison table
+                icon: 'fas fa-list',                     // ← CHANGEABLE: Icon for features section in comparison table (CHANGED FROM GIFT TO HEART)
+                color: '#10b981'                          // ← CHANGEABLE: Color for features icons in comparison table
             },
             specs: {
                 icon: 'fas fa-cog',                       // ← CHANGEABLE: Icon for specs section in comparison table (CHANGED FROM WRENCH TO COG)
-                color: '#ef4444'                          // ← CHANGEABLE: Color for specs icons in comparison table
+                color: '#06b6d4'                          // ← CHANGEABLE: Color for specs icons in comparison table
             }
         }
     }
@@ -2082,7 +1109,7 @@ window.SECTION_TITLES = SECTION_TITLES;
 
 // ========== TEMPLATE TYPE CONFIGURATION ==========
 // Choose your template type to customize what displays in place of pricing
-const TEMPLATE_TYPE = "physical_products"; // ← CHANGE THIS TO MATCH YOUR WEBSITE TYPE
+const TEMPLATE_TYPE = "casino_websites"; // ← CHANGE THIS TO MATCH YOUR WEBSITE TYPE
 
 // Available template types:
 // "physical_products"    - Shows price, original price, discount (default)

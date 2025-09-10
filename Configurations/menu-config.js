@@ -34,15 +34,13 @@ const MENU_CONFIG = {
     // Promotional box content (appears at top of menu)
     promotional: {
         enabled: true,
-        title: "🍎 MacBook Pro M4 Max",
-        subtitle: "Editor's Choice - Best Gaming Laptop 2025",
-        description: "Our #1 ranked gaming laptop | Exceptional performance | Stunning display | Industry-leading battery",
-        
-        // Product logo configuration
+        title: "🚀 Rocketpot Casino",
+        subtitle: "Exceptional security • Instant crypto withdrawals",
+        description: "Massive game selection, provably fair, and rich cashback bonuses.",
         productLogo: {
             enabled: true,                        // Show product logo
-            src: "./assets/images/laptop_test/apple_logo_black_text.png", // Path to product logo
-            alt: "Top Product Logo",              // Alt text for logo
+            src: "./assets/images/casino_test/rocketpot_text_logo_black.webp", // Path to product logo
+            alt: "Rocketpot Casino Logo",              // Alt text for logo
             width: "80px",                        // Logo width
             height: "80px",                       // Logo height
             
@@ -68,9 +66,9 @@ const MENU_CONFIG = {
         
         // Button configuration
         ctaButton: {
-            text: "Buy Now",                  // CTA button text
-            icon: "fas fa-laptop",                // FontAwesome icon class
-            link: "https://www.apple.com/uk/shop/buy-mac/macbook-pro/14-inch-m4-max",          // CTA button link
+            text: "Play on Rocketpot",
+            icon: "fas fa-external-link-alt",                // FontAwesome icon class
+            link: "https://rocketpot.io/",          // CTA button link
             class: "promo-btn primary-btn"        // CTA button CSS class
         },
         
@@ -103,38 +101,36 @@ const MENU_CONFIG = {
     columns: [
         {
             id: "main-categories",
-            title: "Gaming Laptops",
+            title: "Crypto Casinos",
             enabled: true,
             links: [
-                { text: "🏆 Top 10 Rankings", url: "./index.html#top10", description: "Best gaming laptops 2025" },
+                { text: "🏆 Top 10 Rankings", url: "./index.html#top10", description: "Best crypto casinos 2025" },
                 { text: "⚖️ Compare Options", url: "./index.html#comparison", description: "Side-by-side comparison" },
                 { text: "📝 Latest Articles", url: "./blog.html", description: "Reviews and guides" },
-                { text: "📞 Contact Us", url: "./contact.html", description: "Get in touch" },
-                /* { text: "🎁 Best Deals", url: "./index.html#deals", description: "Exclusive offers" } */
+                { text: "📞 Contact Us", url: "./contact.html", description: "Get in touch" }
             ]
         },
         {
             id: "top-partners",
-            title: "Featured Laptops",
+            title: "Featured Sites",
             enabled: true,
             links: [
-                { text: "💻 MacBook Pro M4 Max", url: "./index.html#editors-choice-review", description: "Editor's Pick - Best Overall" },
-                { text: "💻 ASUS ROG Zephyrus G18", url: "./index.html#review-4", description: "Best Gaming - RTX 4080" },
-                { text: "💻 Dell XPS 15 Plus", url: "./index.html#review-2", description: "Best Premium - OLED Display" },
-                /* { text: "🔥 Hot Deals", url: "#hot-deals", description: "Limited time offers" }, */
+                { text: "🚀 Rocketpot", url: "./index.html#editors-choice-review", description: "Editor’s Choice" },
+                { text: "🎰 Stake", url: "./index.html#review-1", description: "Top UX Pick" },
+                { text: "💰 BC.Game", url: "./index.html#review-2", description: "Top Bonus Pick" },
                 { text: "📊 All Rankings", url: "./index.html#top10", description: "View complete list" }
             ]
         },
         {
             id: "resources",
-            title: "Resources & Guides", 
+            title: "Resources & Guides",
             enabled: true,
             links: [
-                { text: "🎓 Gaming Laptop Buying Guide", url: "./blogpost1.html", description: "Complete buying guide" },
-                { text: "🔧 RTX 4090 vs RTX 4080", url: "./blogpost2.html", description: "GPU comparison" },
-                { text: "❄️ Cooling Systems Guide", url: "./blogpost3.html", description: "Thermal management" },
+                { text: "🎓 Safety & KYC 101", url: "./blogpost1.html", description: "Play safer" },
+                { text: "📈 Bonus WR Explained", url: "./blogpost2.html", description: "Math of value" },
+                { text: "⚡ Fast Payout Tips", url: "./blogpost3.html", description: "Avoid delays" },
                 { text: "❓ FAQ", url: "./contact.html#faq", description: "Common questions" },
-                { text: "📈 Laptop News", url: "./blog.html", description: "Latest updates" }
+                { text: "📰 Casino News", url: "./blog.html", description: "Latest updates" }
             ]
         },
         {
@@ -145,7 +141,6 @@ const MENU_CONFIG = {
                 { text: "🛡️ Privacy Policy", url: "./privacy.html", description: "Your data protection" },
                 { text: "📋 Terms of Service", url: "./disclaimer.html", description: "Usage terms" },
                 { text: "⚠️ Disclaimer", url: "./disclaimer.html#disclaimer", description: "Important notices" },
-                { text: "🤝 Affiliate Disclosure", url: "./disclaimer.html#affiliate", description: "Transparency" },
                 { text: "📧 Support Center", url: "./contact.html", description: "Help & assistance" }
             ]
         },
@@ -194,11 +189,10 @@ const MENU_CONFIG = {
             enabled: true,
             links: [
                 { text: "💬 Forums", url: "https://www.reddit.com/r/top_crypto_casinos/", target: "_blank", description: "Join the discussion" },
-                { text: "🎥 Streams", url: "./streaming.html", description: "Watch live gameplay" },
                 { text: "📺 Reviews", url: "./index.html#reviews", description: "Detailed casino reviews" },
                 /* { text: "🏅 Tournaments", url: "#tournaments", description: "Competitive events" }, */
                 { text: "📰 News", url: "./blog.html", description: "Latest gaming news" },
-                { text: "🎤 Podcasts", url: "./podcast.html", description: "Discussions & Interviews"},
+                
                 /* { text: "📸 Screenshots", url: "#screenshots", description: "Share your moments" } */
             ]
         }

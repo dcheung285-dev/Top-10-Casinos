@@ -10,17 +10,17 @@ const HOME_CONFIG = {
     // Hero Section Configuration
     hero: {
         enabled: true,
-        title: "Top 10 Gaming Laptops 2025",
-        subtitle: "Expert Reviews & Comprehensive Rankings",
-        description: "Discover the most powerful gaming laptops with our detailed reviews, performance analysis, and exclusive deals. From MacBook Pro M4 Max to ASUS ROG - find your perfect gaming machine.",
+        title: "Top 10 Crypto Casinos 2025",
+        subtitle: "Expert Picks, Bonuses, and Fast Payouts",
+        description: "Discover the best Bitcoin and crypto casinos with verified ratings, bonus terms, and withdrawal speeds. From Stake to BitStarz and Cloudbet, find your perfect fit.",
         ctaButton: {
-            text: "View Our Top 10 Gaming Laptops",
+            text: "View Our Top 10 Crypto Casinos",
             link: "index.html",
-            icon: "fas fa-laptop"
+            icon: "fas fa-coins"
         },
         backgroundType: "animated", // "static", "video", "animated"
         backgroundConfig: {
-            animationType: "matrix", // "crypto-rain", "floating-coins", "matrix", "particles"
+            animationType: "crypto-rain", // "crypto-rain", "floating-coins", "matrix", "particles"
             primaryColor: "var(--primary-color)",
             secondaryColor: "var(--secondary-color)",
             intensity: "medium" // "low", "medium", "high"
@@ -30,9 +30,9 @@ const HOME_CONFIG = {
             position: "bottom", // "left", "right", "center", "top", "bottom"
             layout: "stacked", // "side-by-side", "stacked", "overlay"
             image: {
-                src: "assets/images/laptop_test/laptop_guy.png", // Path to your image
-                alt: "Top Gaming Laptop Experience",
-                placeholder: "💻", // Emoji or icon if image fails to load
+                src: "assets/images/casino_test/casino_popout.png",
+                alt: "Top Crypto Casino Experience",
+                placeholder: "🎰", // Emoji or icon if image fails to load
                 aspectRatio: "16:9", // "1:1", "4:3", "16:9", "21:9", "auto"
                 objectFit: "contain" // "cover", "contain", "fill", "scale-down"
             },
@@ -61,30 +61,30 @@ const HOME_CONFIG = {
                 trigger: 200, // pixels scrolled
                 backgroundType: "gradient", // Changed from image to gradient
                 backgroundValue: "linear-gradient(135deg, #1f2937, #374151)", // Dark gradient
-                title: "Powerful Performance",
-                description: "Experience cutting-edge processors and graphics for demanding workflows",
+                title: "Massive Game Selection",
+                description: "Explore thousands of slots, live dealer games, and originals",
                 animation: "fade-slide-left",
-                icon: "fas fa-microchip"
+                icon: "fas fa-gamepad"
             },
             {
                 id: "section-2", 
                 trigger: 600,
                 backgroundType: "gradient",
                 backgroundValue: "linear-gradient(135deg, #065f46, #047857)", // Green gradient
-                title: "Stunning Displays",
-                description: "Crystal-clear screens with high refresh rates and accurate color reproduction",
+                title: "Instant Crypto Payouts",
+                description: "Lightning-fast deposits and withdrawals across popular coins",
                 animation: "fade-slide-right",
-                icon: "fas fa-tv"
+                icon: "fas fa-coins"
             },
             {
                 id: "section-3",
                 trigger: 1000,
                 backgroundType: "gradient",
                 backgroundValue: "linear-gradient(135deg, #7c2d12, #9a3412)", // Orange gradient
-                title: "All-Day Battery",
-                description: "Long-lasting battery life to keep you productive throughout your day",
+                title: "Bonuses & VIP Rewards",
+                description: "Multi-tier welcomes, cashback, races, and loyalty perks",
                 animation: "fade-slide-up",
-                icon: "fas fa-battery-full"
+                icon: "fas fa-gift"
             }
         ]
     },
@@ -93,13 +93,13 @@ const HOME_CONFIG = {
     videoSections: [
         {
             enabled: true,
-            title: "How to Choose the Perfect Gaming Laptop",
-            description: "Learn the key factors when selecting a gaming laptop. Discover how CPU, GPU, and display specifications impact your gaming and productivity experience.",
-            videoUrl: "./assets/videos/laptop_test/laptop_loop1.mp4", // Local video file path
-            externalUrl: "https://youtube.com/watch?v=example1", // External URL (YouTube, etc.) - opens in new tab when clicked
+            title: "How to Choose the Best Crypto Casino",
+            description: "Key factors: licensing, game variety, bonus terms, payments, and responsible gambling tools.",
+            videoUrl: "./assets/videos/casino_test/how-to.mp4", 
+            externalUrl: "https://www.youtube.com/watch?v=9ysF44ceIew",
             displayType: "video", // "video" or "thumbnail" - choose how to display
             thumbnailImage: "./assets/images/casino_test/casino18.jpg", // Thumbnail image if displayType is "thumbnail"
-            placeholder: "🎥 Laptop Buying Guide Video - Add your video URL in home-config.js",
+            placeholder: "🎥 Crypto Casino Guide Video - Add your video URL in home-config.js",
             autoplay: true,
             loop: true, // ← NEW: Video will loop continuously
             muted: true, // Recommended for autoplay to work in browsers
@@ -109,13 +109,13 @@ const HOME_CONFIG = {
         },
         {
             enabled: true,
-            title: "Gaming Laptop Performance Tests", 
-            description: "See real-world performance benchmarks and gaming tests. Learn about frame rates, thermal management, and optimization techniques for maximum performance.",
-            videoUrl: "./assets/videos/laptop_test/laptop_loop2.mp4", // Local video file path
-            externalUrl: "https://youtube.com/watch?v=example2", // External URL (YouTube, etc.) - opens in new tab when clicked
+            title: "Provably Fair Gaming Explained", 
+            description: "How provably fair works and why it matters for transparency and trust.",
+            videoUrl: "./assets/videos/casino_test/strat.mp4",
+            externalUrl: "https://www.youtube.com/watch?v=i4_3jrftoA0", 
             displayType: "video", // "video" or "thumbnail" - choose how to display
             thumbnailImage: "./assets/images/casino_test/casino16.webp", // Thumbnail image if displayType is "thumbnail"
-            placeholder: "🎯 Performance Testing Video - Add your video URL in home-config.js",
+            placeholder: "🎯 Provably Fair Video - Add your video URL in home-config.js",
             autoplay: true,
             loop: true, // ← NEW: Video will loop continuously
             muted: true, // Recommended for autoplay to work in browsers
@@ -132,11 +132,11 @@ const HOME_CONFIG = {
         {
             enabled: true,
             type: "banner", // "banner", "card", "popup", "floating"
-            title: "💻 MacBook Pro M4 Max Deal!",
-            subtitle: "Save $300 + Free AppleCare+",
-            description: "Limited time offer on our #1 ranked gaming laptop",
-            ctaText: "Get MacBook Deal",
-            ctaLink: "https://www.apple.com/uk/macbook-pro/",
+            title: "🏆 Stake – Top UX Pick",
+            subtitle: "Join the Largest Crypto Community",
+            description: "Clean UI, 3,000+ games, and VIP rewards.",
+            ctaText: "Go to Stake",
+            ctaLink: "https://www.stake.com/",
             animation: "pulse-glow-slide", // Enhanced animation
             backgroundType: "animated-gradient", // Enhanced background
             backgroundConfig: {
@@ -156,11 +156,11 @@ const HOME_CONFIG = {
         {
             enabled: true,
             type: "card",
-            title: "🚀 Dell XPS 15 Plus - Most Popular",
-            subtitle: "Premium Design Meets Performance", 
-            description: "Experience the most popular premium laptop with stunning 4K+ OLED display",
-            ctaText: "Shop Dell XPS",
-            ctaLink: "https://www.dell.com/en-uk/shop/dell-laptops/scr/laptops/appref=xps-product-line",
+            title: "💰 BC.Game – Biggest Headline Bonus",
+            subtitle: "Four-tier welcome up to high caps",
+            description: "8,000+ games, BC Originals, and micro crypto minimums.",
+            ctaText: "See BC.Game",
+            ctaLink: "https://www.bc.game/",
             animation: "hover-lift-glow-shake", // Enhanced animation
             backgroundType: "animated-pattern",
             backgroundConfig: {
@@ -180,11 +180,11 @@ const HOME_CONFIG = {
         {
             enabled: true,
             type: "card",
-            title: "💎 ASUS ROG Zephyrus - Best Gaming",
-            subtitle: "Ultimate Gaming Performance",
-            description: "Enjoy the most powerful gaming laptop with 18-inch 240Hz display and RTX 4080",
-            ctaText: "Shop ASUS ROG",
-            ctaLink: "https://www.asus.com/uk/laptops/for-gaming/all-series/filter?SubSeries=ROG-Zephyrus",
+            title: "🚀 Rocketpot – Editor’s Choice",
+            subtitle: "Instant crypto withdrawals • Provably fair",
+            description: "Massive game selection, cashback, and fast payouts.",
+            ctaText: "Claim Rocketpot Bonus",
+            ctaLink: "https://rocketpot.io/",
             animation: "bounce-glow-rotate", // New bouncing animation
             backgroundType: "animated-gradient",
             backgroundConfig: {
@@ -209,14 +209,14 @@ const HOME_CONFIG = {
         animations: [
             {
                 name: "floating-icons",
-                elements: ["laptop", "microchip", "memory", "battery"],
+                elements: ["bitcoin", "ethereum", "litecoin", "dogecoin"],
                 count: 15,
                 speed: "slow",
                 direction: "up"
             },
             {
                 name: "matrix-rain", 
-                characters: ["💻", "⚡", "🖥️", "🔋", "⚙️", "📱"], //crypto symbols: ₿, Ξ, Ł, Ð, ₳, ○, ◊, △, ฿, ₮, ɱ, ꜩ, Ƀ
+                characters: ["₿", "♠", "Ξ", "♥", "Ł", "♦", "Ð", "♣", "₳", "♤", "○", "♡", "◊", "🎲", "△", "฿", "♧", "₮", "♢", "ɱ", "🎰", "ꜩ", "🍀", "Ƀ"],
                 density: "medium",
                 speed: "medium",
                 color: "var(--primary-color)"
@@ -227,7 +227,14 @@ const HOME_CONFIG = {
                 connectionDistance: 100,
                 speed: "slow",
                 color: "var(--accent-color)"
-            }
+            }, 
+            {
+                name: "crypto-rain", 
+                characters: ["₿", "♠", "Ξ", "♥", "Ł", "♦", "Ð", "♣", "₳", "♤", "○", "♡", "◊", "🎲", "△", "฿", "♧", "₮", "♢", "ɱ", "🎰", "ꜩ", "🍀", "Ƀ"],
+                density: "medium",
+                speed: "medium",
+                color: "var(--primary-color)"
+            },
         ]
     },
 
@@ -237,7 +244,7 @@ const HOME_CONFIG = {
         elements: [
             {
                 type: "floating-cta",
-                text: "🎯 Find Your Perfect Laptop",
+                text: "🎯 Find Your Crypto Casino",
                 link: "index.html",
                 position: "bottom-right",
                 animation: "bounce-fade",

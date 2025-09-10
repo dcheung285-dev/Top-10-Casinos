@@ -188,6 +188,7 @@ Order and scope:
    - each: title, subtitle, meta description, slugs (if text), author line, category, tags, intro/outro, CTA, table of contents labels, headings, captions PLACEHOLDER text (leave images).
    - BLOGPOST_META
    - ARTICLE_CONTENT - tableOfContents, sections (id: ,title: ,content: ), etc
+   - main article sections
    - CTA_CONTENT
    - RELATED_POSTS
 

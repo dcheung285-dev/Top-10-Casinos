@@ -10,8 +10,8 @@ const CONTACT_PAGE_TITLE = "Contact Us | {{BRAND_NAME}}";     // ← Contact pag
 
 // ========== CONTACT PAGE HERO SECTION ==========
 const CONTACT_HERO = {
-    title: "Get in Touch",                                    // ← Contact page main title
-    subtitle: "Have questions about our gaming laptop reviews? Need help choosing the perfect laptop? We're here to help you find the ideal gaming machine for your needs."  // ← Contact page description
+    title: "Get in Touch",
+    subtitle: "Questions about our crypto casino reviews, payouts, or bonus terms? We’re here to help you compare safely and play responsibly."
 };
 
 // ========== CONTACT FORM CONFIGURATION ==========
@@ -26,13 +26,12 @@ const CONTACT_FORM = {
     // Subject dropdown options
     subjectOptions: [
         { value: "", text: "Select a topic" },                // ← Default option
-        { value: "laptop-question", text: "Gaming Laptop Question" },
-        { value: "performance-inquiry", text: "Performance & Specs Inquiry" },
-        { value: "buying-question", text: "Laptop Buying Question" },
-        { value: "review-request", text: "Laptop Review Request" },
-        { value: "partnership", text: "Brand Partnership Inquiry" },
+        { value: "casino-question", text: "Casino Review Question" },
+        { value: "bonus-inquiry", text: "Bonus / Wagering Requirement Inquiry" },
+        { value: "payouts", text: "Deposits & Withdrawals" },
+        { value: "safety", text: "Safety / KYC / Compliance" },
+        { value: "partnership", text: "Affiliate / Partnership" },
         { value: "technical-issue", text: "Technical Issue" },
-        { value: "general-inquiry", text: "General Inquiry" },
         { value: "other", text: "Other" }
     ],
     
@@ -45,7 +44,7 @@ const CONTACT_FORM = {
     },
     
     placeholders: {
-        message: "Tell us about your gaming laptop question or how we can help you find the perfect laptop..."
+        message: "Tell us your country, coins, preferred games, and what matters most (speed, safety, bonuses) so we can tailor advice."
     },
     
     // Submit button text
@@ -56,16 +55,16 @@ const CONTACT_FORM = {
 
 // ========== CTA BOX CONFIGURATION ==========
 const CONTACT_CTA_BOX = {
-    title: "Ready to Find the Best Gaming Laptops?",              // ← CTA box main title
-    subtitle: "Check out our expertly reviewed Top 10 gaming laptop recommendations!", // ← CTA box description
+    title: "Ready to Compare Crypto Casinos?",
+    subtitle: "See our verified Top 10 with payout speeds, safety indices, and bonus notes.",
     
     // Icon configuration (FontAwesome classes)
-    titleIcon: "fas fa-laptop",                              // ← Icon before title
-    buttonIcon: "fas fa-star",                               // ← Icon in button
+    titleIcon: "fas fa-coins",                              // ← Icon before title
+    buttonIcon: "fas fa-trophy",                               // ← Icon in button
     
     // Button configuration
-    buttonText: "View Our Top 10 Gaming Laptops",                 // ← Button text
-    buttonLink: "./index.html#index.html",                       // ← Button destination link
+    buttonText: "View Our Top 10 Crypto Casinos",                 // ← Button text
+    buttonLink: "./index.html#top10",                       // ← Button destination link
     
     // Styling options
     showTitleIcon: true,                                     // ← Show/hide title icon
@@ -99,10 +98,10 @@ buttonText: "View All Reviews"
 
 // ========== CONTACT INFORMATION ==========
 const CONTACT_INFO = {
-    email: "contact@LaptopWorld.com",                            // ← Your contact email "eg. contact@yoursite.com"
-    phone: "020 7946 0000",                              // ← Your phone number "eg. +1 (555) 123-4567"
-    address: "888 Main St, London, UK",               // ← Your address "eg. 123 Main St, City, State 12345"
-    responseTime: "1-2 hours",                                 // ← Typical response time "eg. 24 hours"
+    email: "contact@RollReviews.com",                            // ← Your contact email "eg. contact@yoursite.com"
+    phone: "",                              // ← Your phone number "eg. +1 (555) 123-4567"
+    address: "",               // ← Your address "eg. 123 Main St, City, State 12345"
+    responseTime: "24 hours",                                 // ← Typical response time "eg. 24 hours"
     
     // Social media links
     socialMedia: {
@@ -116,41 +115,29 @@ const CONTACT_INFO = {
 // ========== FAQ CONFIGURATION ==========
 const FAQ_CONFIG = {
     title: "Frequently Asked Questions",                     // ← FAQ section title
-    subtitle: "Quick answers to common gaming laptop questions",           // ← FAQ section subtitle
+    subtitle: "Quick answers about crypto casinos: safety, payments, and bonuses",           // ← FAQ section subtitle
     
     // FAQ items - add/edit/remove as needed
     items: [
         {
-            question: "How do you test gaming laptops?",
-            answer: "We thoroughly test each gaming laptop for performance, build quality, display quality, battery life, thermal management, and user experience. Our reviews include benchmark testing, real-world gaming sessions, and long-term reliability assessment."
+            question: "How do you verify casino safety?",
+            answer: "We cross-reference third‑party safety indices, complaint histories, license details, responsible-gaming tools, and our payout tests where possible."
         },
         {
-            question: "Are your laptop reviews unbiased?",
-            answer: "Yes, our reviews are completely honest and unbiased. We only recommend laptops that meet our strict performance and quality standards, regardless of affiliate commissions. We test every laptop extensively before making recommendations."
+            question: "Why do payout times vary so much?",
+            answer: "Network congestion, KYC triggers, withdrawal limits, and manual checks can affect speed. We note typical timelines and advise on avoiding delays."
         },
         {
-            question: "What should I look for in a gaming laptop?",
-            answer: "Key factors include a powerful GPU (RTX 4060 or better), sufficient RAM (16GB minimum), fast storage (SSD), good cooling system, high refresh rate display (144Hz+), and reliable build quality. We evaluate all these aspects in our reviews."
+            question: "What do wagering requirements and game weighting mean?",
+            answer: "WR defines playthrough before withdrawal; weighting sets how different games contribute. Always check bonus T&Cs for time limits and eligible titles."
         },
         {
-            question: "How much should I spend on a gaming laptop?",
-            answer: "Gaming laptops range from £800 for entry-level to £4000+ for premium models. For solid 1080p gaming, expect £1200-2000. For 1440p/4K gaming, budget £2000-3500. We provide clear value recommendations in each price category."
+            question: "Can I play without full KYC?",
+            answer: "Small play is often frictionless, but large withdrawals or flagged activity commonly trigger KYC per AML policies. Plan ahead and keep documents ready."
         },
         {
-            question: "Which brands make the best gaming laptops?",
-            answer: "Top gaming laptop brands include ASUS ROG, MSI, Razer, Dell Alienware, HP Omen, Acer Predator, and Lenovo Legion. Each has strengths in different areas - we highlight the best models from each manufacturer in our reviews."
-        },
-        {
-            question: "How important is display quality for gaming?",
-            answer: "Display quality is crucial for gaming. Look for high refresh rates (144Hz-240Hz), low input lag, good color accuracy, and appropriate resolution. We test display performance extensively and recommend the best gaming displays in each category."
-        },
-        {
-            question: "Do gaming laptops have good battery life?",
-            answer: "Gaming laptops typically have 3-6 hours of general use and 1-3 hours while gaming. Some ultrabooks with gaming capability offer 8+ hours for productivity tasks. We clearly indicate battery performance in each review."
-        },
-        {
-            question: "Can you review a specific gaming laptop?",
-            answer: "Absolutely! We love hearing from our community. Send us your suggestions using the form above, and we'll consider it for our next review cycle if it meets our testing criteria and availability."
+            question: "Which coins are best for deposits?",
+            answer: "Stablecoins simplify accounting; BTC/ETH have wide support but higher fees. Many sites accept LTC, XRP, TRX for lower network costs."
         }
     ]
 };
