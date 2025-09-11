@@ -15,11 +15,11 @@ const BLOGPOST_META = {
     readTime: 10,
 	keywords: "casino bonus wagering requirements, game weighting, expected value, promo math, non-sticky bonus, sticky bonus",
 	// Leave images as-is per instructions
-    image: "./assets/images/laptop_test/gpu.jpg",
+    image: "./assets/images/casino_test/bonuses.webp",
 	imageAlt: "Casino bonus wagering explained",
     imageScale: 1.0,
 	imagePositioning: { objectPosition: 'center', objectFit: 'cover' },
-    socialImage: "./assets/images/laptop_test/rtx_4090_comparison.webp",
+    socialImage: "./assets/images/casino_test/bonuses.webp",
     tags: [
 		{ text: "WR", type: "secondary" },
 		{ text: "Weighting", type: "primary" },

@@ -14,11 +14,11 @@ const BLOGPOST_META = {
 	author: "Top 10 Crypto Casinos Editorial",
 	readTime: 12,
 	keywords: "crypto casino safety, KYC, payouts, responsible gaming, safety index, AML, licensing",
-	image: "./assets/images/laptop_test/blog1.webp",
+	image: "./assets/images/casino_test/kyc.webp",
 	imageAlt: "Crypto casino safety guide",
 	imageScale: 1.0,
 	imagePositioning: { objectPosition: 'center', objectFit: 'cover' },
-	socialImage: "./assets/images/laptop_test/gaming_laptop_buying_guide.webp",
+	socialImage: "./assets/images/casino_test/kyc.webp",
 	tags: [
 		{ text: "Safety", type: "success" },
 		{ text: "KYC", type: "primary" },

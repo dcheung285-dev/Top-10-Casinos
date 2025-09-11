@@ -15,11 +15,11 @@ const BLOGPOST_META = {
 	readTime: 8,
 	keywords: "crypto casino fast payouts, withdrawal speed, KYC, network fees, banking tips",
 	// Leave images as-is per instructions
-    image: "./assets/images/laptop_test/cooling.jpg",
+    image: "./assets/images/casino_test/fast2.jpg",
 	imageAlt: "Crypto casino payouts speed tips",
     imageScale: 1.0,
 	imagePositioning: { objectPosition: 'center', objectFit: 'cover' },
-    socialImage: "./assets/images/laptop_test/laptop_cooling_system.webp",
+    socialImage: "./assets/images/casino_test/fast2.jpg",
     tags: [
 		{ text: "Payouts", type: "success" },
 		{ text: "Speed", type: "primary" },
