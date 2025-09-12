@@ -100,12 +100,9 @@ Edit this file to change the footer across the entire website.
             
             <div class="footer-section">
                 <h4>Connect</h4>
-                <p>Follow us for the latest crypto casino news and reviews.</p>
+                <p>Don't forget to sign up to our newsletter for the latest crypto casino news and reviews.</p>
                 <ul>
-                    <li><a href="https://x.com/yourbrand" target="_blank">X</a></li>
-                    <li><a href="https://facebook.com/yourbrand" target="_blank">Facebook</a></li>
-                    <li><a href="https://instagram.com/yourbrand" target="_blank">Instagram</a></li>
-                    <li><a href="https://youtube.com/yourbrand" target="_blank">YouTube</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
                 </ul>
             </div>
             
