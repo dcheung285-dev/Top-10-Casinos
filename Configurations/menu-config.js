@@ -199,7 +199,7 @@ const MENU_CONFIG = {
 
     // Social media links
     social: {
-        enabled: true,
+        enabled: false,
         title: "Follow Us",
         links: [
             { 
