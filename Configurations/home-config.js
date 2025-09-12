@@ -30,7 +30,7 @@ const HOME_CONFIG = {
             position: "bottom", // "left", "right", "center", "top", "bottom"
             layout: "stacked", // "side-by-side", "stacked", "overlay"
             image: {
-                src: "assets/images/casino_test/casino_popout.png",
+                src: "assets/images/casino_test/casino-hero.png",
                 alt: "Top Crypto Casino Experience",
                 placeholder: "🎰", // Emoji or icon if image fails to load
                 aspectRatio: "16:9", // "1:1", "4:3", "16:9", "21:9", "auto"
