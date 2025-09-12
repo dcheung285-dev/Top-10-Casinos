@@ -118,7 +118,7 @@ Brand settings are managed by Configurations/brand-config.js
                         </a>
                         <a href="blog.html" class="search-option">
                             <span class="icon">📰</span>
-                            <span>Blog & News</span>
+                            <span>Blog & Guides</span>
                         </a>
                         <a href="contact.html" class="search-option">
                             <span class="icon">📞</span>
