@@ -104,7 +104,7 @@ const CONTACT_INFO = {
     responseTime: "24 hours",                                 // ← Typical response time "eg. 24 hours"
 
     // Visibility toggles (set to false to hide)
-    showEmail: true,
+    showEmail: false,
     showPhone: false,
     showAddress: false,
     showResponseTime: true,
