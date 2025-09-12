@@ -188,7 +188,6 @@ const MENU_CONFIG = {
             title: "Community",
             enabled: true,
             links: [
-                { text: "💬 Forums", url: "https://www.reddit.com/r/top_crypto_casinos/", target: "_blank", description: "Join the discussion" },
                 { text: "📺 Reviews", url: "./index.html#reviews", description: "Detailed casino reviews" },
                 /* { text: "🏅 Tournaments", url: "#tournaments", description: "Competitive events" }, */
                 { text: "📰 News", url: "./blog.html", description: "Latest gaming news" },
