@@ -102,6 +102,13 @@ const CONTACT_INFO = {
     phone: "",                              // ← Your phone number "eg. +1 (555) 123-4567"
     address: "",               // ← Your address "eg. 123 Main St, City, State 12345"
     responseTime: "24 hours",                                 // ← Typical response time "eg. 24 hours"
+
+    // Visibility toggles (set to false to hide)
+    showEmail: true,
+    showPhone: false,
+    showAddress: false,
+    showResponseTime: true,
+    showSocial: false,
     
     // Social media links
     socialMedia: {
@@ -291,34 +298,50 @@ class ContactPageManager {
      * Load contact information from config
      */
     loadContactInfo() {
-        // Update email
+        // Email
+        const emailItem = document.querySelector('#contact-email')?.closest('.contact-info-item');
         const emailElement = document.getElementById('contact-email');
-        if (emailElement && CONTACT_INFO.email) {
+        const showEmail = CONTACT_INFO.showEmail !== false && !!CONTACT_INFO.email;
+        if (emailItem) emailItem.style.display = showEmail ? '' : 'none';
+        if (showEmail && emailElement) {
             emailElement.textContent = CONTACT_INFO.email;
             emailElement.href = `mailto:${CONTACT_INFO.email}`;
         }
-        
-        // Update phone
+
+        // Phone
+        const phoneItem = document.querySelector('#contact-phone')?.closest('.contact-info-item');
         const phoneElement = document.getElementById('contact-phone');
-        if (phoneElement && CONTACT_INFO.phone) {
+        const showPhone = CONTACT_INFO.showPhone === true && !!CONTACT_INFO.phone;
+        if (phoneItem) phoneItem.style.display = showPhone ? '' : 'none';
+        if (showPhone && phoneElement) {
             phoneElement.textContent = CONTACT_INFO.phone;
             phoneElement.href = `tel:${CONTACT_INFO.phone}`;
         }
-        
-        // Update address
+
+        // Address
         const addressElement = document.getElementById('contact-address');
-        if (addressElement && CONTACT_INFO.address) {
+        const addressItem = addressElement?.closest('.contact-info-item');
+        const showAddress = CONTACT_INFO.showAddress === true && !!CONTACT_INFO.address;
+        if (addressItem) addressItem.style.display = showAddress ? '' : 'none';
+        if (showAddress && addressElement) {
             addressElement.textContent = CONTACT_INFO.address;
         }
-        
-        // Update response time
+
+        // Response Time (4th item hard-coded in HTML)
+        const responseTimeItem = document.querySelector('.contact-info-item:nth-child(4)');
         const responseTimeElement = document.querySelector('.contact-info-item:nth-child(4) p:last-child');
-        if (responseTimeElement && CONTACT_INFO.responseTime) {
+        const showResponse = CONTACT_INFO.showResponseTime !== false && !!CONTACT_INFO.responseTime;
+        if (responseTimeItem) responseTimeItem.style.display = showResponse ? '' : 'none';
+        if (showResponse && responseTimeElement) {
             responseTimeElement.textContent = CONTACT_INFO.responseTime;
         }
-        
-        // Update social media links
-        this.loadSocialLinks();
+
+        // Social media section (Row 3 spans columns)
+        const socialContainer = document.getElementById('contact-social');
+        const socialItem = socialContainer?.closest('.contact-info-item');
+        const showSocial = CONTACT_INFO.showSocial !== false;
+        if (socialItem) socialItem.style.display = showSocial ? '' : 'none';
+        if (showSocial) this.loadSocialLinks();
     }
     
     /**
