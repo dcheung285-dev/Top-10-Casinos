@@ -74,7 +74,7 @@ Brand settings are managed by Configurations/brand-config.js
         <!-- Search Bar Container -->
         <div class="nav-search-container" id="navSearchContainer">
             <div class="nav-search-wrapper">
-                <input type="text" class="nav-search-input" id="navSearchInput" placeholder="Search laptops, reviews, guides...">
+                <input type="text" class="nav-search-input" id="navSearchInput" placeholder="Search casinos, reviews, guides...">
                 <button class="nav-search-close" id="navSearchClose">
                     <i class="fas fa-times"></i>
                 </button>
