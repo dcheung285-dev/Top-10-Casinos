@@ -24,16 +24,13 @@ class NavigationLoader {
         
         // Map filenames to page identifiers
         const pageMap = {
-            'index.html': 'home',
+            'index.html': 'reviews',
             'blog.html': 'blog',
             'privacy.html': 'privacy',
             'disclaimer.html': 'disclaimer',
             'contact.html': 'contact',
             'cookies.html': 'cookies',
-            'podcast.html': 'podcast',
-            'streaming.html': 'streaming',
-            'top10.html': 'top10',
-            '': 'home' // For root path
+            'home.html': 'home' // For root path
         };
         
         return pageMap[filename] || 'home';
@@ -92,19 +89,19 @@ Brand settings are managed by Configurations/brand-config.js
                     <div class="search-section-title">Popular Searches</div>
                     <div class="popular-searches">
                         <a href="index.html" class="search-option">
-                            <span class="icon">💻</span>
-                            <span>Best Gaming Laptops</span>
+                            <span class="icon">📈</span>
+                            <span>Best Crypto Casinos</span>
                         </a>
-                        <a href="index.html##editors-choice-review" class="search-option">
+                        <a href="index.html#editors-choice-review" class="search-option">
                             <span class="icon">👑</span>
                             <span>Editor's Pick</span>
                         </a>
                         <a href="index.html#editors-choice-review" class="search-option">
                             <span class="icon">🚀</span>
-                            <span>MacBook Pro M4 Max</span>
+                            <span>Rocketpot Casino</span>
                         </a>
                         
-                        <a href="index.html#compare" class="search-option">
+                        <a href="index.html#comparison" class="search-option">
                             <span class="icon">⚖️</span>
                             <span>Compare Laptops</span>
                         </a>
@@ -126,14 +123,6 @@ Brand settings are managed by Configurations/brand-config.js
                         <a href="contact.html" class="search-option">
                             <span class="icon">📞</span>
                             <span>Contact Us</span>
-                        </a>
-                        <a href="podcast.html" class="search-option">
-                            <span class="icon">🎧</span>
-                            <span>Podcasts</span>
-                        </a>
-                        <a href="streaming.html" class="search-option">
-                            <span class="icon">🎥</span>
-                            <span>Streaming</span>
                         </a>
                         <a href="contact.html#faq" class="search-option">
                             <span class="icon">❓</span>
