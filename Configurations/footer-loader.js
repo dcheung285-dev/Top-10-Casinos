@@ -102,7 +102,7 @@ Edit this file to change the footer across the entire website.
                 <h4>Connect</h4>
                 <p>Don't forget to sign up to our newsletter for the latest crypto casino news and reviews.</p>
                 <ul>
-                    <li><a href="./contact.html">Contact Us</a></li>
+                    <li><a href="./newsletter.html">Sign Up to Our Newsletter</a></li>
                 </ul>
             </div>
             
