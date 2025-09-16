@@ -38,9 +38,9 @@ const NEWSLETTER_CONFIG = {
         heroSubtitle: "Stay updated with new reviews, RTP/volatility explainers, and slot feature guides.",
         mainTitle: "Why Subscribe?",
         mainParagraphs: [
-            "Get concise, research-backed breakdowns of RTP variants and volatility so you can pick slots wisely.",
-            "See real feature explanations — scatter pays, tumbles, cluster multipliers, and Megaways — with examples.",
-            "Be first to know about big provider promos like Drops & Wins and evergreen picks to try in demo mode."
+            "Get weekly updates on the Top 10 crypto casinos — BTC/ETH/USDT support, provably fair games, and real trust signals.",
+            "Compare on-chain fees, deposit/withdraw speeds, limits, and KYC policies to choose the right site for your bankroll.",
+            "Unlock exclusive crypto bonuses: fair wagering, cashback, and VIP rewards from reputable, licensed brands."
         ]
     },
     // Content settings
