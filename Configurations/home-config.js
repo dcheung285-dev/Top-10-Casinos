@@ -90,6 +90,7 @@ const HOME_CONFIG = {
     },
 
     // Video sections
+    videoSectionsTitle: "Learn about Crypto Casinos",
     videoSections: [
         {
             enabled: true,
