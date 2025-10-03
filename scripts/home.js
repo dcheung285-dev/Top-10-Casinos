@@ -299,6 +299,9 @@ class HomePage {
         if (heroButton && (heroConfig.cta || heroConfig.ctaButton)) {
             const ctaConfig = heroConfig.cta || heroConfig.ctaButton;
             heroButton.href = ctaConfig.link;
+            // Open CTA in new tab by default unless explicitly overridden
+            heroButton.target = (ctaConfig.target && ctaConfig.target !== '') ? ctaConfig.target : '_blank';
+            heroButton.rel = 'noopener noreferrer';
             if (heroIcon) heroIcon.className = ctaConfig.icon;
             if (heroText) heroText.textContent = ctaConfig.text;
             console.log('✅ Hero CTA set:', ctaConfig.text);
@@ -333,6 +336,8 @@ class HomePage {
         
         if (heroButton) {
             heroButton.href = 'index.html';
+            heroButton.target = '_blank';
+            heroButton.rel = 'noopener noreferrer';
             if (heroIcon) heroIcon.className = 'fas fa-coins';
             if (heroText) heroText.textContent = 'View Our Top 10 Crypto Casinos';
         }
@@ -783,7 +788,7 @@ class HomePage {
                     <h3 class="ad-title">${ad.title}</h3>
                     <h4 class="ad-subtitle">${ad.subtitle}</h4>
                     <p class="ad-description">${ad.description}</p>
-                    <a href="${ad.ctaLink}" class="ad-cta-btn">${ad.ctaText}</a>
+                    <a href="${ad.ctaLink}" class="ad-cta-btn" target="_blank" rel="noopener noreferrer">${ad.ctaText}</a>
                 </div>
             `;
             
@@ -798,6 +803,15 @@ class HomePage {
             
             // Initialize ad-specific animations
             this.initializeAdAnimations(adElement, ad);
+            // Enforce opening in new tab for ad CTAs unless explicitly overridden
+            const ctaLinkEl = adElement.querySelector('.ad-cta-btn');
+            if (ctaLinkEl) {
+                const newTab = (typeof ad.openInNewTab === 'boolean') ? ad.openInNewTab : true;
+                ctaLinkEl.target = newTab ? '_blank' : '_self';
+                ctaLinkEl.rel = 'noopener noreferrer';
+            }
+            // Apply customizable glow if provided
+            this.applyAdGlow(adElement, ad);
             
             console.log(`✅ Created animated ad: ${ad.title}`);
         });
@@ -810,6 +824,13 @@ class HomePage {
             case 'animated-gradient':
                 element.style.background = ad.backgroundConfig.gradient;
                 element.classList.add('animated-gradient', ad.backgroundConfig.animationStyle);
+                // Allow CSS keyframes to pick up card-specific glow colors
+                if (ad.glow && ad.glow.color) {
+                    element.style.setProperty('--ad-glow-1', this.resolveGlow(ad.glow.color, 0.6));
+                    element.style.setProperty('--ad-glow-2', this.resolveGlow(ad.glow.hoverColor || ad.glow.color, 0.8));
+                    element.style.setProperty('--ad-glow-3', this.resolveGlow(ad.glow.color, 0.7));
+                    element.style.setProperty('--ad-glow-4', this.resolveGlow(ad.glow.hoverColor || ad.glow.color, 0.9));
+                }
                 break;
             case 'animated-pattern':
                 element.classList.add('animated-pattern', ad.backgroundConfig.pattern);
@@ -1008,6 +1029,46 @@ class HomePage {
         }
     }
 
+    applyAdGlow(adElement, adConfig) {
+        // Support customizable glow from HOME_CONFIG.adSections[n].glow
+        if (!adConfig || !adConfig.glow) return;
+        const glow = adConfig.glow;
+        const baseColor = glow.color || 'var(--primary-color)';
+        const hoverColor = glow.hoverColor || 'var(--secondary-color)';
+        const baseBlur = glow.blur || '20px';
+        const hoverBlur = glow.hoverBlur || '40px';
+
+        // Apply base glow
+        adElement.style.boxShadow = `0 0 ${baseBlur} ${baseColor}`;
+        // Also set CSS vars used by keyframes
+        adElement.style.setProperty('--ad-glow-1', this.resolveGlow(baseColor, 0.6));
+        adElement.style.setProperty('--ad-glow-2', this.resolveGlow(hoverColor, 0.8));
+        adElement.style.setProperty('--ad-glow-3', this.resolveGlow(baseColor, 0.7));
+        adElement.style.setProperty('--ad-glow-4', this.resolveGlow(hoverColor, 0.9));
+
+        // Enhance hover glow
+        adElement.addEventListener('mouseenter', () => {
+            adElement.style.boxShadow = `0 0 ${hoverBlur} ${hoverColor}, 0 0 calc(${hoverBlur} * 1.5) ${baseColor}`;
+        });
+        adElement.addEventListener('mouseleave', () => {
+            adElement.style.boxShadow = `0 0 ${baseBlur} ${baseColor}`;
+        });
+    }
+
+    resolveGlow(color, alphaFallback) {
+        // If a hex color is provided, convert to rgba with provided alpha
+        if (typeof color === 'string' && color.startsWith('#')) {
+            const hex = color.replace('#', '');
+            const bigint = parseInt(hex.length === 3 ? hex.split('').map(c => c + c).join('') : hex, 16);
+            const r = (bigint >> 16) & 255;
+            const g = (bigint >> 8) & 255;
+            const b = bigint & 255;
+            return `rgba(${r}, ${g}, ${b}, ${alphaFallback ?? 0.7})`;
+        }
+        // If already rgba or css var, pass through
+        return color;
+    }
+
     initializeCryptoAnimations() {
         console.log('🪙 Initializing crypto animations...');
         
@@ -1075,6 +1136,8 @@ class HomePage {
         const cta = document.createElement('a');
         cta.className = `floating-cta ${config.animation}`;
         cta.href = config.link;
+        cta.target = (config.target && config.target !== '') ? config.target : '_blank';
+        cta.rel = 'noopener noreferrer';
         cta.textContent = config.text;
         cta.style.position = 'fixed';
         
